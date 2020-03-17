@@ -37,6 +37,8 @@
 			this.ClientSize = new System.Drawing.Size(640, 480);
 			this.Name = "FormMain";
 			this.Text = "FormMain";
+			this.Load += new System.EventHandler(this.FormMain_Load);
+			this.Icon = AupLauncher.Properties.Resources.AupFile;
 			this.ResumeLayout(false);
 
 		}
