@@ -69,5 +69,41 @@ namespace AupLauncher.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
+        
+        /// <summary>
+        ///   DefaultProfileDisplayName に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string DefaultProfileDisplayName {
+            get {
+                return ResourceManager.GetString("DefaultProfileDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   NewProfileDisplayName に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string NewProfileDisplayName {
+            get {
+                return ResourceManager.GetString("NewProfileDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ShellDescription に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ShellDescription {
+            get {
+                return ResourceManager.GetString("ShellDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ShellMenu_Open に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ShellMenu_Open {
+            get {
+                return ResourceManager.GetString("ShellMenu_Open", resourceCulture);
+            }
+        }
     }
 }

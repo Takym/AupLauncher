@@ -121,4 +121,16 @@
   <data name="AupFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>AupFile.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DefaultProfileDisplayName" xml:space="preserve">
+    <value>DefaultProfileDisplayName</value>
+  </data>
+  <data name="NewProfileDisplayName" xml:space="preserve">
+    <value>NewProfileDisplayName</value>
+  </data>
+  <data name="ShellDescription" xml:space="preserve">
+    <value>ShellDescription</value>
+  </data>
+  <data name="ShellMenu_Open" xml:space="preserve">
+    <value>ShellMenu_Open</value>
+  </data>
 </root>

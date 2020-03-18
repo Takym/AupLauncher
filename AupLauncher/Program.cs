@@ -10,13 +10,22 @@ namespace AupLauncher
 		public const string Version   = "0.0.0.0";
 		public const string CodeName  = "aupl00a0";
 
+		public static Settings Settings { get; private set; }
+
 		[STAThread()]
 		internal static int Main(string[] args)
 		{
-			Application.EnableVisualStyles();
-			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FormMain());
-			return 0;
+			using (Settings = new Settings()) {
+				if (args.Length == 1 && Settings.IsInstalled) {
+					// TODO: ここでAviUtlのプロジェクトファイルかAudacityのプロジェクトファイルか判別する。
+					return 0;
+				} else {
+					Application.EnableVisualStyles();
+					Application.SetCompatibleTextRenderingDefault(false);
+					Application.Run(new FormMain());
+					return 1;
+				}
+			}
 		}
 	}
 }
