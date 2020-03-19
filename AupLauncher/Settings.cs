@@ -57,20 +57,25 @@ namespace AupLauncher
 			if (this.IsDisposed) {
 				throw new ObjectDisposedException(nameof(Settings));
 			}
-			_defkey = _reg.GetValue("DefaultProfile", "_default").ToString();
-			string[] profiles = _reg.GetSubKeyNames();
-			for (int i = 0; i < profiles.Length; ++i) {
-				if (this.Profiles.ContainsKey(profiles[i])) {
-					using (var pfreg = _reg.OpenSubKey(profiles[i])) {
-						this.Profiles[profiles[i]].LoadFromRegistry(pfreg);
+			var sver = Version.Parse(_reg.GetValue("SavedVersion", "255.255.255.255").ToString());
+			if (sver <= Program.GetVersion()) {
+				_defkey = _reg.GetValue("DefaultProfile", "_default").ToString();
+				string[] profiles = _reg.GetSubKeyNames();
+				for (int i = 0; i < profiles.Length; ++i) {
+					if (this.Profiles.ContainsKey(profiles[i])) {
+						using (var pfreg = _reg.OpenSubKey(profiles[i])) {
+							this.Profiles[profiles[i]].LoadFromRegistry(pfreg);
+						}
+					} else {
+						var pf = new SettingProfile();
+						using (var pfreg = _reg.OpenSubKey(profiles[i])) {
+							pf.LoadFromRegistry(pfreg);
+						}
+						this.Profiles.Add(profiles[i], pf);
 					}
-				} else {
-					var pf = new SettingProfile();
-					using (var pfreg = _reg.OpenSubKey(profiles[i])) {
-						pf.LoadFromRegistry(pfreg);
-					}
-					this.Profiles.Add(profiles[i], pf);
 				}
+			} else {
+				throw new NotSupportedException();
 			}
 		}
 
@@ -79,7 +84,8 @@ namespace AupLauncher
 			if (this.IsDisposed) {
 				throw new ObjectDisposedException(nameof(Settings));
 			}
-			_reg.SetValue("DefaultProfile", _defkey, RegistryValueKind.String);
+			_reg.SetValue("SavedVersion",   Program.Version, RegistryValueKind.String);
+			_reg.SetValue("DefaultProfile", _defkey,         RegistryValueKind.String);
 			var delList = new List<string>();
 			foreach (var item in this.Profiles) {
 				if (item.Value.IsDeleted && item.Key != _defkey) {
@@ -134,10 +140,10 @@ namespace AupLauncher
 					// 基本情報
 					using (var aup    = extinfo.CreateSubKey(".aup"))
 					using (var aupcls = cls.CreateSubKey(".aup")) {
-						aup.SetValue("", "aupfile");
+						aup.SetValue("",                   "aupfile");
 						aup.SetValue("AupLauncherManaged", "RestoreBackup");
-						aup.SetValue("Content Type", "video+audio/x-au-project");
-						aup.SetValue("PerceivedType", "video+audio");
+						aup.SetValue("Content Type",       "video+audio/x-au-project");
+						aup.SetValue("PerceivedType",      "video+audio");
 						using (var progids = aup.CreateSubKey("OpenWithProgIds")) {
 							progids.SetValue("aupfile", "");
 						}
@@ -151,6 +157,7 @@ namespace AupLauncher
 						shell.SetValue("Content Type",       "video+audio/x-au-project");
 						shell.SetValue("PerceivedType",      "video+audio");
 						shell.SetValue("URL Protocol",       "");
+						shell.SetValue("AlwaysShowExt",      "1");
 						using (var icon = shell.CreateSubKey("DefaultIcon")) {
 							icon.SetValue("", Application.ExecutablePath);
 						}

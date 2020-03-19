@@ -124,6 +124,15 @@
   <data name="DefaultProfileDisplayName" xml:space="preserve">
     <value>DefaultProfileDisplayName</value>
   </data>
+  <data name="Message_FileNotFound" xml:space="preserve">
+    <value>Message_FileNotFound {0}</value>
+  </data>
+  <data name="Message_InvalidExecutionKind" xml:space="preserve">
+    <value>Message_InvalidExecutionKind</value>
+  </data>
+  <data name="Message_InvalidType" xml:space="preserve">
+    <value>Message_InvalidType {0}</value>
+  </data>
   <data name="NewProfileDisplayName" xml:space="preserve">
     <value>NewProfileDisplayName</value>
   </data>

@@ -80,6 +80,33 @@ namespace AupLauncher.Properties {
         }
         
         /// <summary>
+        ///   Message_FileNotFound {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Message_FileNotFound {
+            get {
+                return ResourceManager.GetString("Message_FileNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Message_InvalidExecutionKind に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Message_InvalidExecutionKind {
+            get {
+                return ResourceManager.GetString("Message_InvalidExecutionKind", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Message_InvalidType {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Message_InvalidType {
+            get {
+                return ResourceManager.GetString("Message_InvalidType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   NewProfileDisplayName に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string NewProfileDisplayName {
