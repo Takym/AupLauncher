@@ -10,17 +10,23 @@ namespace AupLauncher
 {
 	public static class Program
 	{
-		public const string Author    = "Takym";
-		public const string Copyright = "Copyright (C) 2020 Takym.";
-		public const string Version   = "0.0.0.0";
-		public const string CodeName  = "aupl00a0";
+		public const string Caption        = nameof(AupLauncher);
+		public const string Description    = "Launcher for AviUtl & Audacity Project Files";
+		public const string Author         = "Takym";
+		public const string Copyright      = "Copyright (C) 2020 Takym.";
+		public const string Version        = "0.0.0.0";
+		public const string CodeName       = "aupl00a0";
 
 		public static Settings Settings { get; private set; }
 
 		[STAThread()]
 		internal static int Main(string[] args)
 		{
+#if !DEBUG
 			try {
+#else
+			{
+#endif
 				using (Settings = new Settings()) {
 					if (args.Length == 1 && Settings.IsInstalled) {
 						return StartupProgram(DetermineFileKind(args[0]));
@@ -31,8 +37,10 @@ namespace AupLauncher
 						return 0;
 					}
 				}
+#if !DEBUG
 			} catch (Exception e) {
-				return e.HResult;
+				return SaveErrorReport(e);
+#endif
 			}
 		}
 
@@ -49,7 +57,7 @@ namespace AupLauncher
 			if (!File.Exists(fname)) {
 				MessageBox.Show(
 					string.Format(Resources.Message_FileNotFound, fname),
-					nameof(AupLauncher),
+					Caption,
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Warning);
 				return (ExecutionKind.Nothing, fname);
@@ -95,7 +103,7 @@ audacity:
 			case ExecutionKind.ShowError:
 				MessageBox.Show(
 					string.Format(Resources.Message_InvalidType, arg.fname),
-					nameof(AupLauncher),
+					Caption,
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Warning);
 				return 0;
@@ -103,8 +111,8 @@ audacity:
 				return 0;
 			default: //case ExecutionKind.InvalidValue:
 				MessageBox.Show(
-					string.Format(Resources.Message_InvalidExecutionKind),
-					nameof(AupLauncher),
+					Resources.Message_InvalidExecutionKind,
+					Caption,
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Warning);
 				return -1;
@@ -115,6 +123,53 @@ audacity:
 			psi.Verb              = "open";
 			Process.Start(psi);
 			return 0;
+		}
+
+		public static int SaveErrorReport(Exception e)
+		{
+			var    dt    = DateTime.Now;
+			int    pid   = Process.GetCurrentProcess().Id;
+			int    ret   = e.HResult;
+			string msg   = e.Message;
+			string fname = Path.Combine(Application.StartupPath, "Logs", $"ErrorReports.{dt:yyyyMMddHHmmssfff}.[{pid}].log");
+			Directory.CreateDirectory(Path.GetDirectoryName(fname));
+			using (var fs = new FileStream(fname, FileMode.Append, FileAccess.Write, FileShare.None))
+			using (var sw = new StreamWriter(fs, Encoding.UTF8)) {
+				sw.WriteLine(Resources.ER_Line1, Caption);
+				sw.WriteLine(Resources.ER_Line2);
+				sw.WriteLine(Resources.ER_Line3);
+				sw.WriteLine(Resources.ER_Line4, Version, CodeName);
+				sw.WriteLine(Resources.ER_Line5, dt);
+				sw.WriteLine(Resources.ER_Line6, pid);
+				sw.WriteLine(Resources.ER_Line7, fname);
+				sw.WriteLine();
+				int n = 0;
+				do {
+					sw.WriteLine(Resources.ER_Line8_Title, n);
+					sw.WriteLine(Resources.ER_Line8_Message, e.Message);
+					sw.WriteLine(Resources.ER_Line8_HResult, e.HResult);
+					sw.WriteLine(Resources.ER_Line8_HelpLink, e.HelpLink);
+					sw.WriteLine(Resources.ER_Line8_Source, e.Source);
+					sw.WriteLine(Resources.ER_Line8_SourceFunc, e.TargetSite?.Name, e.TargetSite?.ReflectedType.FullName);
+					sw.WriteLine(Resources.ER_Line8_StackTrace);
+					sw.WriteLine("    * {0}", e.StackTrace?.Replace(sw.NewLine, $"{sw.NewLine}    * "));
+					sw.WriteLine(Resources.ER_Line8_Data);
+					foreach (var key in e.Data.Keys) {
+						sw.WriteLine("    * [{0}]={1}", key.ToString().PadRight(48), e.Data[key]);
+					}
+					sw.WriteLine("----------------");
+					sw.WriteLine(e.ToString());
+					sw.WriteLine("================");
+					sw.WriteLine();
+					e = e.InnerException; ++n;
+				} while (e != null);
+			}
+			MessageBox.Show(
+				string.Format(Resources.Message_ErrorReport, msg, fname),
+				Caption,
+				MessageBoxButtons.OK,
+				MessageBoxIcon.Error);
+			return ret;
 		}
 
 		private static byte[] _aviutl_signature = new byte[] {

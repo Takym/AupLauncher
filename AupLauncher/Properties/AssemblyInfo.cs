@@ -1,9 +1,9 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle(nameof(AupLauncher))]
-[assembly: AssemblyProduct(nameof(AupLauncher))]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle(AupLauncher.Program.Caption)]
+[assembly: AssemblyProduct(AupLauncher.Program.Caption)]
+[assembly: AssemblyDescription(AupLauncher.Program.Description)]
 [assembly: AssemblyCompany(AupLauncher.Program.Author)]
 [assembly: AssemblyCopyright(AupLauncher.Program.Copyright)]
 [assembly: AssemblyVersion(AupLauncher.Program.Version)]

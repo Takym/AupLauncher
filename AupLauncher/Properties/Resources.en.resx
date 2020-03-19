@@ -122,72 +122,72 @@
     <value>AupFile.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DefaultProfileDisplayName" xml:space="preserve">
-    <value>DefaultProfileDisplayName</value>
+    <value>Default Profile</value>
   </data>
   <data name="ER_Line1" xml:space="preserve">
-    <value>ER_Line1 {0}</value>
+    <value># {0} Error Report</value>
   </data>
   <data name="ER_Line2" xml:space="preserve">
-    <value>ER_Line2</value>
+    <value> * This log file may include your privacy information.</value>
   </data>
   <data name="ER_Line3" xml:space="preserve">
-    <value>ER_Line3</value>
+    <value> * When the problem cannot be fixed, please submit this file to the developer (Takym). (Only used to repair and improve.)</value>
   </data>
   <data name="ER_Line4" xml:space="preserve">
-    <value>ER_Line4 {0} {1}</value>
+    <value>Version: {0}, Code Name: {1}</value>
   </data>
   <data name="ER_Line5" xml:space="preserve">
-    <value>ER_Line5 {0:yyyyMMddHHmmssfff}</value>
+    <value>Time Occurred: {0:dddd, MMMM dd, yyyy  HH:mm:ss.fff (tthh)}</value>
   </data>
   <data name="ER_Line6" xml:space="preserve">
-    <value>ER_Line6 {0}</value>
+    <value>Process ID: {0}</value>
   </data>
   <data name="ER_Line7" xml:space="preserve">
-    <value>ER_Line7 {0}</value>
+    <value>Location to this file: {0}</value>
   </data>
   <data name="ER_Line8_Data" xml:space="preserve">
-    <value>ER_Line8_Data</value>
+    <value>Data.............:</value>
   </data>
   <data name="ER_Line8_HelpLink" xml:space="preserve">
-    <value>ER_Line8_HelpLink {0}</value>
+    <value>Help Link........: {0}</value>
   </data>
   <data name="ER_Line8_HResult" xml:space="preserve">
-    <value>ER_Line8_HResult {0}</value>
+    <value>H-Result.........: 0x{0:X08} ({0})</value>
   </data>
   <data name="ER_Line8_Message" xml:space="preserve">
-    <value>ER_Line8_Message {0}</value>
+    <value>Message..........: {0}</value>
   </data>
   <data name="ER_Line8_Source" xml:space="preserve">
-    <value>ER_Line8_Source {0}</value>
+    <value>Source...........: {0}</value>
   </data>
   <data name="ER_Line8_SourceFunc" xml:space="preserve">
-    <value>ER_Line8_SourceFunc {0}</value>
+    <value>Source (Function): {0} in {1}</value>
   </data>
   <data name="ER_Line8_StackTrace" xml:space="preserve">
-    <value>ER_Line8_StackTrace</value>
+    <value>Call Stack.......:</value>
   </data>
   <data name="ER_Line8_Title" xml:space="preserve">
-    <value>ER_Line8_Title {0}</value>
+    <value>## Exception Information ({0})</value>
   </data>
   <data name="Message_ErrorReport" xml:space="preserve">
-    <value>Message_ErrorReport {0} {1}</value>
+    <value>The unexpected error occurred. {0} Please refer "{1}" for more details.</value>
   </data>
   <data name="Message_FileNotFound" xml:space="preserve">
-    <value>Message_FileNotFound {0}</value>
+    <value>The specified file "{0}" does not exist.</value>
   </data>
   <data name="Message_InvalidExecutionKind" xml:space="preserve">
-    <value>Message_InvalidExecutionKind</value>
+    <value>Detected an invalid execution method. Please fix the settings.</value>
   </data>
   <data name="Message_InvalidType" xml:space="preserve">
-    <value>Message_InvalidType {0}</value>
+    <value>The specified file "{0}" is not a valid project file.</value>
   </data>
   <data name="NewProfileDisplayName" xml:space="preserve">
-    <value>NewProfileDisplayName</value>
+    <value>New Profile</value>
   </data>
   <data name="ShellDescription" xml:space="preserve">
-    <value>ShellDescription</value>
+    <value>AviUtl/Audacity Project File</value>
   </data>
   <data name="ShellMenu_Open" xml:space="preserve">
-    <value>ShellMenu_Open</value>
+    <value>&amp;Open with AupLauncher</value>
   </data>
 </root>

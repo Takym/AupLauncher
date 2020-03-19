@@ -80,6 +80,150 @@ namespace AupLauncher.Properties {
         }
         
         /// <summary>
+        ///   ER_Line1 {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ER_Line1 {
+            get {
+                return ResourceManager.GetString("ER_Line1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ER_Line2 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ER_Line2 {
+            get {
+                return ResourceManager.GetString("ER_Line2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ER_Line3 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ER_Line3 {
+            get {
+                return ResourceManager.GetString("ER_Line3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ER_Line4 {0} {1} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ER_Line4 {
+            get {
+                return ResourceManager.GetString("ER_Line4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ER_Line5 {0:yyyyMMddHHmmssfff} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ER_Line5 {
+            get {
+                return ResourceManager.GetString("ER_Line5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ER_Line6 {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ER_Line6 {
+            get {
+                return ResourceManager.GetString("ER_Line6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ER_Line7 {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ER_Line7 {
+            get {
+                return ResourceManager.GetString("ER_Line7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ER_Line8_Data に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ER_Line8_Data {
+            get {
+                return ResourceManager.GetString("ER_Line8_Data", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ER_Line8_HelpLink {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ER_Line8_HelpLink {
+            get {
+                return ResourceManager.GetString("ER_Line8_HelpLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ER_Line8_HResult {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ER_Line8_HResult {
+            get {
+                return ResourceManager.GetString("ER_Line8_HResult", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ER_Line8_Message {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ER_Line8_Message {
+            get {
+                return ResourceManager.GetString("ER_Line8_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ER_Line8_Source {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ER_Line8_Source {
+            get {
+                return ResourceManager.GetString("ER_Line8_Source", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ER_Line8_SourceFunc {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ER_Line8_SourceFunc {
+            get {
+                return ResourceManager.GetString("ER_Line8_SourceFunc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ER_Line8_StackTrace に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ER_Line8_StackTrace {
+            get {
+                return ResourceManager.GetString("ER_Line8_StackTrace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ER_Line8_Title {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ER_Line8_Title {
+            get {
+                return ResourceManager.GetString("ER_Line8_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Message_ErrorReport {0} {1} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Message_ErrorReport {
+            get {
+                return ResourceManager.GetString("Message_ErrorReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Message_FileNotFound {0} に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Message_FileNotFound {

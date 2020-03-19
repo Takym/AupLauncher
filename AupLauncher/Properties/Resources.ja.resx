@@ -122,72 +122,72 @@
     <value>AupFile.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DefaultProfileDisplayName" xml:space="preserve">
-    <value>DefaultProfileDisplayName</value>
+    <value>既定のプロファイル</value>
   </data>
   <data name="ER_Line1" xml:space="preserve">
-    <value>ER_Line1 {0}</value>
+    <value>■{0}のエラーレポート</value>
   </data>
   <data name="ER_Line2" xml:space="preserve">
-    <value>ER_Line2</value>
+    <value>※このログファイルには個人情報が含まれている可能性があります。</value>
   </data>
   <data name="ER_Line3" xml:space="preserve">
-    <value>ER_Line3</value>
+    <value>※エラーが解決しない場合は開発者(Takym)に提出してください。不具合改善に利用します。</value>
   </data>
   <data name="ER_Line4" xml:space="preserve">
-    <value>ER_Line4 {0} {1}</value>
+    <value>バージョン：{0}、コード名：{1}</value>
   </data>
   <data name="ER_Line5" xml:space="preserve">
-    <value>ER_Line5 {0:yyyyMMddHHmmssfff}</value>
+    <value>発生時刻  ：{0:yyyy'年'MM'月'dd'日('dddd')' tthh'時('HH'時)'mm'分'ss.fff'秒'}</value>
   </data>
   <data name="ER_Line6" xml:space="preserve">
-    <value>ER_Line6 {0}</value>
+    <value>プロセスID：{0}</value>
   </data>
   <data name="ER_Line7" xml:space="preserve">
-    <value>ER_Line7 {0}</value>
+    <value>このファイルの保存場所：{0}</value>
   </data>
   <data name="ER_Line8_Data" xml:space="preserve">
-    <value>ER_Line8_Data</value>
+    <value>データ      ：</value>
   </data>
   <data name="ER_Line8_HelpLink" xml:space="preserve">
-    <value>ER_Line8_HelpLink {0}</value>
+    <value>ヘルプリンク：{0}</value>
   </data>
   <data name="ER_Line8_HResult" xml:space="preserve">
-    <value>ER_Line8_HResult {0}</value>
+    <value>H-RESULT    ：0x{0:X08} ({0})</value>
   </data>
   <data name="ER_Line8_Message" xml:space="preserve">
-    <value>ER_Line8_Message {0}</value>
+    <value>メッセージ  ：{0}</value>
   </data>
   <data name="ER_Line8_Source" xml:space="preserve">
-    <value>ER_Line8_Source {0}</value>
+    <value>発生源      ：{0}</value>
   </data>
   <data name="ER_Line8_SourceFunc" xml:space="preserve">
-    <value>ER_Line8_SourceFunc {0}</value>
+    <value>発生源の関数：{0} in {1}</value>
   </data>
   <data name="ER_Line8_StackTrace" xml:space="preserve">
-    <value>ER_Line8_StackTrace</value>
+    <value>呼び出し履歴：</value>
   </data>
   <data name="ER_Line8_Title" xml:space="preserve">
-    <value>ER_Line8_Title {0}</value>
+    <value>□例外の情報 ({0})</value>
   </data>
   <data name="Message_ErrorReport" xml:space="preserve">
-    <value>Message_ErrorReport {0} {1}</value>
+    <value>予期せぬエラーが発生しました。{0}詳細は「{1}」をご覧ください。</value>
   </data>
   <data name="Message_FileNotFound" xml:space="preserve">
-    <value>Message_FileNotFound {0}</value>
+    <value>指定されたファイル「{0}」は存在しません。</value>
   </data>
   <data name="Message_InvalidExecutionKind" xml:space="preserve">
-    <value>Message_InvalidExecutionKind</value>
+    <value>無効な起動方法が検出されました。設定を変更してください。</value>
   </data>
   <data name="Message_InvalidType" xml:space="preserve">
-    <value>Message_InvalidType {0}</value>
+    <value>指定されたファイル「{0}」は有効なプロジェクトファイルではありません。</value>
   </data>
   <data name="NewProfileDisplayName" xml:space="preserve">
-    <value>NewProfileDisplayName</value>
+    <value>新しいプロファイル</value>
   </data>
   <data name="ShellDescription" xml:space="preserve">
-    <value>ShellDescription</value>
+    <value>AviUtl/Audacity プロジェクトファイル</value>
   </data>
   <data name="ShellMenu_Open" xml:space="preserve">
-    <value>ShellMenu_Open</value>
+    <value>AupLauncher で開く(&amp;O)</value>
   </data>
 </root>

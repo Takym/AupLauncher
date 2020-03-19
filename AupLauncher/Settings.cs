@@ -41,7 +41,7 @@ namespace AupLauncher
 
 		public Settings()
 		{
-			_reg = Registry.CurrentUser.CreateSubKey($"Software\\{nameof(AupLauncher)}");
+			_reg = Registry.CurrentUser.CreateSubKey($"Software\\{Program.Caption}");
 			this.Profiles   = new Dictionary<string, SettingProfile>();
 			this.IsDisposed = false;
 			this.LoadFromRegistry();
