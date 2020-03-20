@@ -145,11 +145,11 @@ audacity:
 				sw.WriteLine();
 				int n = 0;
 				do {
-					sw.WriteLine(Resources.ER_Line8_Title, n);
-					sw.WriteLine(Resources.ER_Line8_Message, e.Message);
-					sw.WriteLine(Resources.ER_Line8_HResult, e.HResult);
-					sw.WriteLine(Resources.ER_Line8_HelpLink, e.HelpLink);
-					sw.WriteLine(Resources.ER_Line8_Source, e.Source);
+					sw.WriteLine(Resources.ER_Line8_Title,      n);
+					sw.WriteLine(Resources.ER_Line8_Message,    e.Message);
+					sw.WriteLine(Resources.ER_Line8_HResult,    e.HResult);
+					sw.WriteLine(Resources.ER_Line8_HelpLink,   e.HelpLink);
+					sw.WriteLine(Resources.ER_Line8_Source,     e.Source);
 					sw.WriteLine(Resources.ER_Line8_SourceFunc, e.TargetSite?.Name, e.TargetSite?.ReflectedType.FullName);
 					sw.WriteLine(Resources.ER_Line8_StackTrace);
 					sw.WriteLine("    * {0}", e.StackTrace?.Replace(sw.NewLine, $"{sw.NewLine}    * "));
