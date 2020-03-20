@@ -21,11 +21,11 @@ namespace AupLauncher
 		{
 			this.DisplayName          = Resources.NewProfileDisplayName;
 			this.AviUtlPath           = "C:\\AviUtl\\aviutl.exe";
-			this.AviUtlArgs           = "";
+			this.AviUtlArgs           = "%1";
 			this.AudacityPath         = "‪%ProgramFiles(x86)%\\Audacity\\audacity.exe";
-			this.AudacityArgs         = "‪%ProgramFiles(x86)%\\Audacity\\audacity.exe";
+			this.AudacityArgs         = "%1";
 			this.CustomProgramPath    = "%SystemRoot%\\notepad.exe";
-			this.CustomProgramArgs    = "%SystemRoot%\\notepad.exe";
+			this.CustomProgramArgs    = "%1";
 			this.HandleForInvalidFile = ExecutionKind.ShowError;
 		}
 
@@ -44,12 +44,12 @@ namespace AupLauncher
 		public virtual void SaveToRegistry(RegistryKey reg)
 		{
 			reg.SetValue(nameof(this.DisplayName),          this.DisplayName,          RegistryValueKind.String);
-			reg.SetValue(nameof(this.AviUtlPath),           this.AviUtlPath,           RegistryValueKind.ExpandString);
-			reg.SetValue(nameof(this.AviUtlArgs),           this.AviUtlArgs,           RegistryValueKind.ExpandString);
-			reg.SetValue(nameof(this.AudacityPath),         this.AudacityPath,         RegistryValueKind.ExpandString);
-			reg.SetValue(nameof(this.AudacityArgs),         this.AudacityArgs,         RegistryValueKind.ExpandString);
-			reg.SetValue(nameof(this.CustomProgramPath),    this.CustomProgramPath,    RegistryValueKind.ExpandString);
-			reg.SetValue(nameof(this.CustomProgramArgs),    this.CustomProgramArgs,    RegistryValueKind.ExpandString);
+			reg.SetValue(nameof(this.AviUtlPath),           this.AviUtlPath,           RegistryValueKind.String);
+			reg.SetValue(nameof(this.AviUtlArgs),           this.AviUtlArgs,           RegistryValueKind.String);
+			reg.SetValue(nameof(this.AudacityPath),         this.AudacityPath,         RegistryValueKind.String);
+			reg.SetValue(nameof(this.AudacityArgs),         this.AudacityArgs,         RegistryValueKind.String);
+			reg.SetValue(nameof(this.CustomProgramPath),    this.CustomProgramPath,    RegistryValueKind.String);
+			reg.SetValue(nameof(this.CustomProgramArgs),    this.CustomProgramArgs,    RegistryValueKind.String);
 			reg.SetValue(nameof(this.HandleForInvalidFile), this.HandleForInvalidFile);
 		}
 	}

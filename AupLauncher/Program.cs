@@ -89,16 +89,16 @@ audacity:
 			var psi = new ProcessStartInfo();
 			switch (arg.kind) {
 			case ExecutionKind.AviUtl:
-				psi.FileName  = Settings.Default.AviUtlPath;
-				psi.Arguments = Settings.Default.AviUtlArgs;
+				psi.FileName  = Environment.ExpandEnvironmentVariables(Settings.Default.AviUtlPath);
+				psi.Arguments = Environment.ExpandEnvironmentVariables(Settings.Default.AviUtlArgs);
 				break;
 			case ExecutionKind.Audacity:
-				psi.FileName  = Settings.Default.AudacityPath;
-				psi.Arguments = Settings.Default.AudacityArgs;
+				psi.FileName  = Environment.ExpandEnvironmentVariables(Settings.Default.AudacityPath);
+				psi.Arguments = Environment.ExpandEnvironmentVariables(Settings.Default.AudacityArgs);
 				break;
 			case ExecutionKind.RunCustomProgram:
-				psi.FileName  = Settings.Default.CustomProgramPath;
-				psi.Arguments = Settings.Default.CustomProgramArgs;
+				psi.FileName  = Environment.ExpandEnvironmentVariables(Settings.Default.CustomProgramPath);
+				psi.Arguments = Environment.ExpandEnvironmentVariables(Settings.Default.CustomProgramArgs);
 				break;
 			case ExecutionKind.ShowError:
 				MessageBox.Show(
@@ -117,12 +117,31 @@ audacity:
 					MessageBoxIcon.Warning);
 				return -1;
 			}
-			psi.UseShellExecute   = true;
-			psi.WorkingDirectory  = Path.GetDirectoryName(arg.fname);
-			psi.Arguments        += $" \"{arg.fname}\"";
-			psi.Verb              = "open";
+			psi.UseShellExecute  = true;
+			psi.WorkingDirectory = Path.GetDirectoryName(arg.fname);
+			psi.Arguments        = CreateArgs(psi.Arguments, arg.fname);
+			psi.Verb             = "open";
 			Process.Start(psi);
 			return 0;
+		}
+
+		public static string CreateArgs(string format, string args)
+		{
+			string bat = Path.GetTempFileName();
+			File.WriteAllText(bat, $"@echo off\r\necho {format}", Encoding.UTF8);
+			var psi = new ProcessStartInfo();
+			psi.CreateNoWindow         = true;
+			psi.UseShellExecute        = false;
+			psi.WorkingDirectory       = Environment.CurrentDirectory;
+			psi.FileName               = Environment.GetEnvironmentVariable("COMSPEC");
+			psi.Arguments              = $"/C call \"{bat}\" {args}";
+			psi.Verb                   = "open";
+			psi.RedirectStandardOutput = true;
+			using (var proc = Process.Start(psi))
+			using (var sr   = proc.StandardOutput) {
+				proc.WaitForExit();
+				return sr.ReadToEnd().Trim();
+			}
 		}
 
 		public static int SaveErrorReport(Exception e)
