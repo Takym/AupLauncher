@@ -1,9 +1,9 @@
-﻿using AupLauncher.Properties;
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
+using AupLauncher.Properties;
 using SVersion = System.Version;
 
 namespace AupLauncher
