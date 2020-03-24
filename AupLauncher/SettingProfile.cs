@@ -19,14 +19,7 @@ namespace AupLauncher
 
 		public SettingProfile()
 		{
-			this.DisplayName          = Resources.NewProfileDisplayName;
-			this.AviUtlPath           = "C:\\AviUtl\\aviutl.exe";
-			this.AviUtlArgs           = "%1";
-			this.AudacityPath         = "‪%ProgramFiles(x86)%\\Audacity\\audacity.exe";
-			this.AudacityArgs         = "%1";
-			this.CustomProgramPath    = "%SystemRoot%\\notepad.exe";
-			this.CustomProgramArgs    = "%1";
-			this.HandleForInvalidFile = ExecutionKind.ShowError;
+			this.Reset();
 		}
 
 		public virtual void LoadFromRegistry(RegistryKey reg)
@@ -51,6 +44,18 @@ namespace AupLauncher
 			reg.SetValue(nameof(this.CustomProgramPath),    this.CustomProgramPath,    RegistryValueKind.String);
 			reg.SetValue(nameof(this.CustomProgramArgs),    this.CustomProgramArgs,    RegistryValueKind.String);
 			reg.SetValue(nameof(this.HandleForInvalidFile), this.HandleForInvalidFile);
+		}
+
+		public virtual void Reset()
+		{
+			this.DisplayName          = Resources.NewProfileDisplayName;
+			this.AviUtlPath           = "C:\\AviUtl\\aviutl.exe";
+			this.AviUtlArgs           = "%1";
+			this.AudacityPath         = "‪%ProgramFiles(x86)%\\Audacity\\audacity.exe";
+			this.AudacityArgs         = "%1";
+			this.CustomProgramPath    = "%SystemRoot%\\notepad.exe";
+			this.CustomProgramArgs    = "%1";
+			this.HandleForInvalidFile = ExecutionKind.ShowError;
 		}
 	}
 }

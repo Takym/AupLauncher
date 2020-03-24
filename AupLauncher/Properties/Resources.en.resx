@@ -124,6 +124,24 @@
   <data name="DefaultProfileDisplayName" xml:space="preserve">
     <value>Default Profile</value>
   </data>
+  <data name="EK_Audacity" xml:space="preserve">
+    <value>Run Audacity</value>
+  </data>
+  <data name="EK_AviUtl" xml:space="preserve">
+    <value>Run AviUtl</value>
+  </data>
+  <data name="EK_InvalidValue" xml:space="preserve">
+    <value>This is an invalid value</value>
+  </data>
+  <data name="EK_Nothing" xml:space="preserve">
+    <value>Do nothing</value>
+  </data>
+  <data name="EK_RunCustomProgram" xml:space="preserve">
+    <value>Run a custom program</value>
+  </data>
+  <data name="EK_ShowError" xml:space="preserve">
+    <value>Show an error dialog</value>
+  </data>
   <data name="ER_Line1" xml:space="preserve">
     <value># {0} Error Report</value>
   </data>
@@ -169,6 +187,9 @@
   <data name="ER_Line8_Title" xml:space="preserve">
     <value>## Exception Information ({0})</value>
   </data>
+  <data name="Message_ConfirmUninstalling" xml:space="preserve">
+    <value>The registry of the extension will be uninstalled and the application will terminate. Please push [Yes] to continue, otherwise [No].</value>
+  </data>
   <data name="Message_ErrorReport" xml:space="preserve">
     <value>The unexpected error occurred. {0} Please refer "{1}" for more details.</value>
   </data>
@@ -189,5 +210,14 @@
   </data>
   <data name="ShellMenu_Open" xml:space="preserve">
     <value>&amp;Open with AupLauncher</value>
+  </data>
+  <data name="UI_aud_path_filter" xml:space="preserve">
+    <value>The Audacity Executable Program</value>
+  </data>
+  <data name="UI_avi_path_filter" xml:space="preserve">
+    <value>The AviUtl Executable Program</value>
+  </data>
+  <data name="UI_cus_path_filter" xml:space="preserve">
+    <value>All  Executable Programs</value>
   </data>
 </root>

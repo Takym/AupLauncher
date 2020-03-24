@@ -1,4 +1,5 @@
 ﻿using System;
+using AupLauncher.Properties;
 
 namespace AupLauncher
 {
@@ -65,6 +66,44 @@ namespace AupLauncher
 			default:
 				return ExecutionKind.InvalidValue;
 			}
+		}
+
+		public static LocalizedExecutionKind Localized(this ExecutionKind value)
+		{
+			return new LocalizedExecutionKind(value);
+		}
+	}
+
+	public struct LocalizedExecutionKind
+	{
+		public ExecutionKind Value { get; }
+
+		public LocalizedExecutionKind(ExecutionKind value)
+		{
+			this.Value = value;
+		}
+
+		public override bool Equals(object obj)
+		{
+			if (obj is null) {
+				return false;
+			} else if (obj is LocalizedExecutionKind lek) {
+				return this.Value == lek.Value;
+			} else if (obj is ExecutionKind ek) {
+				return this.Value == ek;
+			} else {
+				return false;
+			}
+		}
+
+		public override int GetHashCode()
+		{
+			return this.Value.GetHashCode();
+		}
+
+		public override string ToString()
+		{
+			return Resources.ResourceManager.GetString("EK_" + this.Value.ToString());
 		}
 	}
 }

@@ -124,6 +124,24 @@
   <data name="DefaultProfileDisplayName" xml:space="preserve">
     <value>DefaultProfileDisplayName</value>
   </data>
+  <data name="EK_Audacity" xml:space="preserve">
+    <value>EK_Audacity</value>
+  </data>
+  <data name="EK_AviUtl" xml:space="preserve">
+    <value>EK_AviUtl</value>
+  </data>
+  <data name="EK_InvalidValue" xml:space="preserve">
+    <value>EK_InvalidValue</value>
+  </data>
+  <data name="EK_Nothing" xml:space="preserve">
+    <value>EK_Nothing</value>
+  </data>
+  <data name="EK_RunCustomProgram" xml:space="preserve">
+    <value>EK_RunCustomProgram</value>
+  </data>
+  <data name="EK_ShowError" xml:space="preserve">
+    <value>EK_ShowError</value>
+  </data>
   <data name="ER_Line1" xml:space="preserve">
     <value>ER_Line1 {0}</value>
   </data>
@@ -169,6 +187,9 @@
   <data name="ER_Line8_Title" xml:space="preserve">
     <value>ER_Line8_Title {0}</value>
   </data>
+  <data name="Message_ConfirmUninstalling" xml:space="preserve">
+    <value>Message_ConfirmUninstalling</value>
+  </data>
   <data name="Message_ErrorReport" xml:space="preserve">
     <value>Message_ErrorReport {0} {1}</value>
   </data>
@@ -189,5 +210,14 @@
   </data>
   <data name="ShellMenu_Open" xml:space="preserve">
     <value>ShellMenu_Open</value>
+  </data>
+  <data name="UI_aud_path_filter" xml:space="preserve">
+    <value>UI_aud_path_filter</value>
+  </data>
+  <data name="UI_avi_path_filter" xml:space="preserve">
+    <value>UI_avi_path_filter</value>
+  </data>
+  <data name="UI_cus_path_filter" xml:space="preserve">
+    <value>UI_cus_path_filter</value>
   </data>
 </root>

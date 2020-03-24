@@ -9,8 +9,8 @@ namespace AupLauncher
 {
 	public sealed class Settings : IDisposable
 	{
-		private readonly RegistryKey                                   _reg;
-		private          string                                        _defkey;
+		private readonly RegistryKey                        _reg;
+		private          string                             _defkey;
 		public           Dictionary<string, SettingProfile> Profiles   { get; private set; }
 		public           bool                               IsDisposed { get; private set; }
 

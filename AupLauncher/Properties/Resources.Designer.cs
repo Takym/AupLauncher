@@ -80,6 +80,60 @@ namespace AupLauncher.Properties {
         }
         
         /// <summary>
+        ///   EK_Audacity に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string EK_Audacity {
+            get {
+                return ResourceManager.GetString("EK_Audacity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   EK_AviUtl に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string EK_AviUtl {
+            get {
+                return ResourceManager.GetString("EK_AviUtl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   EK_InvalidValue に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string EK_InvalidValue {
+            get {
+                return ResourceManager.GetString("EK_InvalidValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   EK_Nothing に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string EK_Nothing {
+            get {
+                return ResourceManager.GetString("EK_Nothing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   EK_RunCustomProgram に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string EK_RunCustomProgram {
+            get {
+                return ResourceManager.GetString("EK_RunCustomProgram", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   EK_ShowError に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string EK_ShowError {
+            get {
+                return ResourceManager.GetString("EK_ShowError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   ER_Line1 {0} に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string ER_Line1 {
@@ -215,6 +269,15 @@ namespace AupLauncher.Properties {
         }
         
         /// <summary>
+        ///   Message_ConfirmUninstalling に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Message_ConfirmUninstalling {
+            get {
+                return ResourceManager.GetString("Message_ConfirmUninstalling", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Message_ErrorReport {0} {1} に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Message_ErrorReport {
@@ -274,6 +337,33 @@ namespace AupLauncher.Properties {
         internal static string ShellMenu_Open {
             get {
                 return ResourceManager.GetString("ShellMenu_Open", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   UI_aud_path_filter に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string UI_aud_path_filter {
+            get {
+                return ResourceManager.GetString("UI_aud_path_filter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   UI_avi_path_filter に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string UI_avi_path_filter {
+            get {
+                return ResourceManager.GetString("UI_avi_path_filter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   UI_cus_path_filter に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string UI_cus_path_filter {
+            get {
+                return ResourceManager.GetString("UI_cus_path_filter", resourceCulture);
             }
         }
     }

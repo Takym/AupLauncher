@@ -117,107 +117,74 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="AupFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>AupFile.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labelDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 12</value>
   </data>
-  <data name="DefaultProfileDisplayName" xml:space="preserve">
-    <value>既定のプロファイル</value>
+  <data name="labelDesc.Text" xml:space="preserve">
+    <value>You can change start-up programs.</value>
   </data>
-  <data name="EK_Audacity" xml:space="preserve">
-    <value>Audacity を起動する</value>
+  <data name="labelAviUtlPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 12</value>
   </data>
-  <data name="EK_AviUtl" xml:space="preserve">
-    <value>AviUtl を起動する</value>
+  <data name="labelAviUtlPath.Text" xml:space="preserve">
+    <value>Path to AviUtl:</value>
   </data>
-  <data name="EK_InvalidValue" xml:space="preserve">
-    <value>無効な値です</value>
+  <data name="labelAudacityPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 12</value>
   </data>
-  <data name="EK_Nothing" xml:space="preserve">
-    <value>何もしない</value>
+  <data name="labelAudacityPath.Text" xml:space="preserve">
+    <value>Path to Audacity:</value>
   </data>
-  <data name="EK_RunCustomProgram" xml:space="preserve">
-    <value>カスタムプログラムを起動する</value>
+  <data name="labelCustomPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 12</value>
   </data>
-  <data name="EK_ShowError" xml:space="preserve">
-    <value>エラーを表示する</value>
+  <data name="labelCustomPath.Text" xml:space="preserve">
+    <value>Path to a custom program:</value>
   </data>
-  <data name="ER_Line1" xml:space="preserve">
-    <value>■{0}のエラーレポート</value>
+  <data name="labelAviUtlArgs.Text" xml:space="preserve">
+    <value>Args for AviUtl:</value>
   </data>
-  <data name="ER_Line2" xml:space="preserve">
-    <value>※このログファイルには個人情報が含まれている可能性があります。</value>
+  <data name="labelAudacityArgs.Text" xml:space="preserve">
+    <value>Args for Audacity:</value>
   </data>
-  <data name="ER_Line3" xml:space="preserve">
-    <value>※エラーが解決しない場合は開発者(Takym)に提出してください。不具合改善に利用します。</value>
+  <data name="labelCustomArgs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 12</value>
   </data>
-  <data name="ER_Line4" xml:space="preserve">
-    <value>バージョン：{0}、コード名：{1}</value>
+  <data name="labelCustomArgs.Text" xml:space="preserve">
+    <value>Args for a custom program:</value>
   </data>
-  <data name="ER_Line5" xml:space="preserve">
-    <value>発生時刻  ：{0:yyyy'年'MM'月'dd'日('dddd')' tthh'時('HH'時)'mm'分'ss.fff'秒'}</value>
+  <data name="tbox_cus_path.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 184</value>
   </data>
-  <data name="ER_Line6" xml:space="preserve">
-    <value>プロセスID：{0}</value>
+  <data name="tbox_cus_path.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 19</value>
   </data>
-  <data name="ER_Line7" xml:space="preserve">
-    <value>このファイルの保存場所：{0}</value>
+  <data name="tbox_cus_args.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 216</value>
   </data>
-  <data name="ER_Line8_Data" xml:space="preserve">
-    <value>データ      ：</value>
+  <data name="tbox_cus_args.Size" type="System.Drawing.Size, System.Drawing">
+    <value>472, 19</value>
   </data>
-  <data name="ER_Line8_HelpLink" xml:space="preserve">
-    <value>ヘルプリンク：{0}</value>
+  <data name="cbox_invfile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 248</value>
   </data>
-  <data name="ER_Line8_HResult" xml:space="preserve">
-    <value>H-RESULT    ：0x{0:X08} ({0})</value>
+  <data name="labelInvfile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 12</value>
   </data>
-  <data name="ER_Line8_Message" xml:space="preserve">
-    <value>メッセージ  ：{0}</value>
+  <data name="labelInvfile.Text" xml:space="preserve">
+    <value>What should do for an invalid file?</value>
   </data>
-  <data name="ER_Line8_Source" xml:space="preserve">
-    <value>発生源      ：{0}</value>
+  <data name="btnReset.Text" xml:space="preserve">
+    <value>Reset</value>
   </data>
-  <data name="ER_Line8_SourceFunc" xml:space="preserve">
-    <value>発生源の関数：{0} in {1}</value>
+  <data name="btnUninstall.Text" xml:space="preserve">
+    <value>Uninstall</value>
   </data>
-  <data name="ER_Line8_StackTrace" xml:space="preserve">
-    <value>呼び出し履歴：</value>
+  <data name="btnReload.Text" xml:space="preserve">
+    <value>Reload</value>
   </data>
-  <data name="ER_Line8_Title" xml:space="preserve">
-    <value>□例外の情報 ({0})</value>
-  </data>
-  <data name="Message_ConfirmUninstalling" xml:space="preserve">
-    <value>拡張子の登録情報をアンインストールし、終了します。続行する場合は [はい] を停止する場合は [いいえ] を押してください。</value>
-  </data>
-  <data name="Message_ErrorReport" xml:space="preserve">
-    <value>予期せぬエラーが発生しました。{0}詳細は「{1}」をご覧ください。</value>
-  </data>
-  <data name="Message_FileNotFound" xml:space="preserve">
-    <value>指定されたファイル「{0}」は存在しません。</value>
-  </data>
-  <data name="Message_InvalidExecutionKind" xml:space="preserve">
-    <value>無効な起動方法が検出されました。設定を変更してください。</value>
-  </data>
-  <data name="Message_InvalidType" xml:space="preserve">
-    <value>指定されたファイル「{0}」は有効なプロジェクトファイルではありません。</value>
-  </data>
-  <data name="NewProfileDisplayName" xml:space="preserve">
-    <value>新しいプロファイル</value>
-  </data>
-  <data name="ShellDescription" xml:space="preserve">
-    <value>AviUtl/Audacity プロジェクトファイル</value>
-  </data>
-  <data name="ShellMenu_Open" xml:space="preserve">
-    <value>AupLauncher で開く(&amp;O)</value>
-  </data>
-  <data name="UI_aud_path_filter" xml:space="preserve">
-    <value>Audacity 実行可能プログラム</value>
-  </data>
-  <data name="UI_avi_path_filter" xml:space="preserve">
-    <value>AviUtl 実行可能プログラム</value>
-  </data>
-  <data name="UI_cus_path_filter" xml:space="preserve">
-    <value>全ての実行可能プログラム</value>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Save</value>
   </data>
 </root>

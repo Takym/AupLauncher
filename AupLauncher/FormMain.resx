@@ -117,4 +117,588 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;labelAviUtlPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tbox_avi_args.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 88</value>
+  </data>
+  <data name="labelCustomArgs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 220</value>
+  </data>
+  <data name="&gt;&gt;tbox_avi_path.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="labelAviUtlPath.Text" xml:space="preserve">
+    <value>labelAviUtlPath</value>
+  </data>
+  <data name="&gt;&gt;tbox_cus_args.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelInvfile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="tbox_cus_path.Text" xml:space="preserve">
+    <value>tbox_cus_path</value>
+  </data>
+  <data name="&gt;&gt;btn_cus_path.Name" xml:space="preserve">
+    <value>btn_cus_path</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="labelDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 12</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbox_cus_args.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btn_aud_path.Name" xml:space="preserve">
+    <value>btn_aud_path</value>
+  </data>
+  <data name="&gt;&gt;labelInvfile.Name" xml:space="preserve">
+    <value>labelInvfile</value>
+  </data>
+  <data name="labelCustomArgs.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="cbox_invfile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 20</value>
+  </data>
+  <data name="&gt;&gt;btn_aud_path.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelCustomPath.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;btnUninstall.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnUninstall.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelDesc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbox_invfile.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;labelCustomArgs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCustomPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_avi_path.Name" xml:space="preserve">
+    <value>btn_avi_path</value>
+  </data>
+  <data name="tbox_avi_args.Size" type="System.Drawing.Size, System.Drawing">
+    <value>520, 19</value>
+  </data>
+  <data name="&gt;&gt;btn_aud_path.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FormMain</value>
+  </data>
+  <data name="labelCustomPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 188</value>
+  </data>
+  <data name="tbox_aud_args.Size" type="System.Drawing.Size, System.Drawing">
+    <value>520, 19</value>
+  </data>
+  <data name="&gt;&gt;tbox_aud_path.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btnReset.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="labelAviUtlPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 12</value>
+  </data>
+  <data name="tbox_aud_path.Text" xml:space="preserve">
+    <value>tbox_aud_path</value>
+  </data>
+  <data name="&gt;&gt;tbox_aud_path.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbox_invfile.Name" xml:space="preserve">
+    <value>cbox_invfile</value>
+  </data>
+  <data name="&gt;&gt;tbox_avi_args.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="cbox_invfile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 248</value>
+  </data>
+  <data name="labelInvfile.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbox_cus_args.Text" xml:space="preserve">
+    <value>tbox_cus_args</value>
+  </data>
+  <data name="labelAviUtlArgs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 92</value>
+  </data>
+  <data name="btn_aud_path.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 23</value>
+  </data>
+  <data name="&gt;&gt;labelAudacityArgs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelAudacityArgs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelAviUtlPath.Name" xml:space="preserve">
+    <value>labelAviUtlPath</value>
+  </data>
+  <data name="&gt;&gt;tbox_avi_path.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="labelAviUtlArgs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 12</value>
+  </data>
+  <data name="labelAudacityArgs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 156</value>
+  </data>
+  <data name="&gt;&gt;btn_aud_path.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbox_aud_args.Name" xml:space="preserve">
+    <value>tbox_aud_args</value>
+  </data>
+  <data name="btn_cus_path.Location" type="System.Drawing.Point, System.Drawing">
+    <value>608, 182</value>
+  </data>
+  <data name="labelInvfile.Text" xml:space="preserve">
+    <value>labelInvfile</value>
+  </data>
+  <data name="&gt;&gt;btnReload.Name" xml:space="preserve">
+    <value>btnReload</value>
+  </data>
+  <data name="&gt;&gt;tbox_cus_path.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>656, 359</value>
+  </data>
+  <data name="tbox_aud_args.Text" xml:space="preserve">
+    <value>tbox_aud_args</value>
+  </data>
+  <data name="labelAudacityPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 124</value>
+  </data>
+  <data name="btnUninstall.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="tbox_cus_path.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tbox_cus_args.Name" xml:space="preserve">
+    <value>tbox_cus_args</value>
+  </data>
+  <data name="&gt;&gt;labelDesc.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="tbox_avi_path.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 56</value>
+  </data>
+  <data name="btn_aud_path.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelCustomArgs.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="labelAudacityPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 12</value>
+  </data>
+  <data name="&gt;&gt;btn_cus_path.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelCustomPath.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnUninstall.Text" xml:space="preserve">
+    <value>btnUninstall</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Name" xml:space="preserve">
+    <value>btnReset</value>
+  </data>
+  <data name="labelAviUtlArgs.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormMain</value>
+  </data>
+  <data name="labelDesc.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btn_avi_path.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbox_avi_args.Text" xml:space="preserve">
+    <value>tbox_avi_args</value>
+  </data>
+  <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 288</value>
+  </data>
+  <data name="&gt;&gt;btn_cus_path.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCustomPath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelAudacityArgs.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="btn_avi_path.Location" type="System.Drawing.Point, System.Drawing">
+    <value>608, 54</value>
+  </data>
+  <data name="labelAudacityArgs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 12</value>
+  </data>
+  <data name="&gt;&gt;tbox_avi_path.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btn_aud_path.Location" type="System.Drawing.Point, System.Drawing">
+    <value>608, 118</value>
+  </data>
+  <data name="&gt;&gt;labelAviUtlArgs.Name" xml:space="preserve">
+    <value>labelAviUtlArgs</value>
+  </data>
+  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btn_cus_path.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelInvfile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 252</value>
+  </data>
+  <data name="&gt;&gt;ofd.Name" xml:space="preserve">
+    <value>ofd</value>
+  </data>
+  <data name="labelAviUtlArgs.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cbox_invfile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnReload.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelAviUtlPath.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;labelAudacityPath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 288</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelAudacityPath.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btn_cus_path.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>656, 359</value>
+  </data>
+  <data name="&gt;&gt;labelAviUtlArgs.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="btn_avi_path.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 23</value>
+  </data>
+  <data name="&gt;&gt;labelInvfile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelAudacityPath.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cbox_invfile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbox_aud_args.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbox_aud_path.Name" xml:space="preserve">
+    <value>tbox_aud_path</value>
+  </data>
+  <data name="labelInvfile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 12</value>
+  </data>
+  <data name="tbox_aud_path.Size" type="System.Drawing.Size, System.Drawing">
+    <value>496, 19</value>
+  </data>
+  <data name="tbox_cus_path.Size" type="System.Drawing.Size, System.Drawing">
+    <value>496, 19</value>
+  </data>
+  <data name="tbox_avi_args.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelAviUtlPath.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelDesc.Text" xml:space="preserve">
+    <value>labelDesc</value>
+  </data>
+  <data name="&gt;&gt;tbox_avi_args.Name" xml:space="preserve">
+    <value>tbox_avi_args</value>
+  </data>
+  <data name="&gt;&gt;tbox_cus_args.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="tbox_cus_args.Size" type="System.Drawing.Size, System.Drawing">
+    <value>520, 19</value>
+  </data>
+  <data name="labelAudacityArgs.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tbox_avi_path.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_avi_path.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnUninstall.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelCustomArgs.Name" xml:space="preserve">
+    <value>labelCustomArgs</value>
+  </data>
+  <data name="&gt;&gt;labelDesc.Name" xml:space="preserve">
+    <value>labelDesc</value>
+  </data>
+  <data name="labelDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 8</value>
+  </data>
+  <data name="labelAviUtlArgs.Text" xml:space="preserve">
+    <value>labelAviUtlArgs</value>
+  </data>
+  <data name="labelInvfile.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;labelCustomPath.Name" xml:space="preserve">
+    <value>labelCustomPath</value>
+  </data>
+  <data name="tbox_avi_path.Size" type="System.Drawing.Size, System.Drawing">
+    <value>496, 19</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbox_aud_path.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 120</value>
+  </data>
+  <data name="&gt;&gt;labelAviUtlArgs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelCustomArgs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 12</value>
+  </data>
+  <data name="&gt;&gt;tbox_aud_path.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnReload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelAudacityPath.Text" xml:space="preserve">
+    <value>labelAudacityPath</value>
+  </data>
+  <data name="&gt;&gt;tbox_cus_path.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbox_aud_args.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbox_aud_args.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labelCustomPath.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelCustomArgs.Text" xml:space="preserve">
+    <value>labelCustomArgs</value>
+  </data>
+  <data name="&gt;&gt;labelAviUtlPath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnReset.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btn_avi_path.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelCustomArgs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnUninstall.Location" type="System.Drawing.Point, System.Drawing">
+    <value>536, 288</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="labelAudacityArgs.Text" xml:space="preserve">
+    <value>labelAudacityArgs</value>
+  </data>
+  <data name="&gt;&gt;btnReload.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="tbox_cus_args.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 216</value>
+  </data>
+  <data name="&gt;&gt;tbox_aud_args.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tbox_avi_args.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;labelAviUtlArgs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnUninstall.Name" xml:space="preserve">
+    <value>btnUninstall</value>
+  </data>
+  <data name="btn_avi_path.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btn_cus_path.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 23</value>
+  </data>
+  <data name="tbox_aud_path.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelAviUtlPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 60</value>
+  </data>
+  <data name="&gt;&gt;ofd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelCustomPath.Text" xml:space="preserve">
+    <value>labelCustomPath</value>
+  </data>
+  <data name="btnReload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 288</value>
+  </data>
+  <data name="labelCustomPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>640, 320</value>
+  </data>
+  <data name="labelAudacityArgs.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbox_invfile.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="labelDesc.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tbox_aud_args.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 152</value>
+  </data>
+  <data name="&gt;&gt;btn_cus_path.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnUninstall.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btnReload.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;tbox_cus_args.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="tbox_cus_path.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 184</value>
+  </data>
+  <data name="labelAviUtlPath.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelAudacityPath.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;tbox_avi_args.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnReset.Text" xml:space="preserve">
+    <value>btnReset</value>
+  </data>
+  <data name="&gt;&gt;labelAudacityArgs.Name" xml:space="preserve">
+    <value>labelAudacityArgs</value>
+  </data>
+  <data name="btn_avi_path.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="tbox_avi_path.Text" xml:space="preserve">
+    <value>tbox_avi_path</value>
+  </data>
+  <data name="btn_aud_path.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="labelCustomArgs.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;labelDesc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="btnReload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="btnReload.Text" xml:space="preserve">
+    <value>btnReload</value>
+  </data>
+  <data name="&gt;&gt;labelAudacityPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelInvfile.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;labelAudacityPath.Name" xml:space="preserve">
+    <value>labelAudacityPath</value>
+  </data>
+  <data name="&gt;&gt;tbox_cus_path.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbox_avi_path.Name" xml:space="preserve">
+    <value>tbox_avi_path</value>
+  </data>
+  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tbox_cus_path.Name" xml:space="preserve">
+    <value>tbox_cus_path</value>
+  </data>
+  <metadata name="ofd.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
