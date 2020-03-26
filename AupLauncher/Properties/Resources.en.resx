@@ -131,7 +131,7 @@
     <value>Run AviUtl</value>
   </data>
   <data name="EK_InvalidValue" xml:space="preserve">
-    <value>This is an invalid value</value>
+    <value>This is an invalid value. (Do not use!)</value>
   </data>
   <data name="EK_Nothing" xml:space="preserve">
     <value>Do nothing</value>

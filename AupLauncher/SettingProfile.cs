@@ -51,9 +51,9 @@ namespace AupLauncher
 			this.DisplayName          = Resources.NewProfileDisplayName;
 			this.AviUtlPath           = "C:\\AviUtl\\aviutl.exe";
 			this.AviUtlArgs           = "%1";
-			this.AudacityPath         = "‪%ProgramFiles(x86)%\\Audacity\\audacity.exe";
+			this.AudacityPath         = "C:\\Program Files (x86)\\Audacity\\audacity.exe";
 			this.AudacityArgs         = "%1";
-			this.CustomProgramPath    = "%SystemRoot%\\notepad.exe";
+			this.CustomProgramPath    = "C:\\Windows\\notepad.exe";
 			this.CustomProgramArgs    = "%1";
 			this.HandleForInvalidFile = ExecutionKind.ShowError;
 		}

@@ -131,7 +131,7 @@
     <value>AviUtl を起動する</value>
   </data>
   <data name="EK_InvalidValue" xml:space="preserve">
-    <value>無効な値です</value>
+    <value>無効な値です(利用しないでください)</value>
   </data>
   <data name="EK_Nothing" xml:space="preserve">
     <value>何もしない</value>

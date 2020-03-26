@@ -17,6 +17,7 @@ namespace AupLauncher
 			if (!Program.Settings.IsInstalled) {
 				Program.Settings.Install();
 			}
+			cbox_invfile.Items.Add(ExecutionKind.InvalidValue    .Localized());
 			cbox_invfile.Items.Add(ExecutionKind.ShowError       .Localized());
 			cbox_invfile.Items.Add(ExecutionKind.Nothing         .Localized());
 			cbox_invfile.Items.Add(ExecutionKind.AviUtl          .Localized());
@@ -29,7 +30,7 @@ namespace AupLauncher
 		{
 			ofd.Reset();
 			ofd.ReadOnlyChecked = true;
-			ofd.Filter          = Resources.UI_avi_path_filter;
+			ofd.Filter          = Resources.UI_avi_path_filter + "|aviutl.exe";
 			if (ofd.ShowDialog() == DialogResult.OK) {
 				tbox_avi_path.Text = ofd.FileName;
 			}
@@ -42,7 +43,7 @@ namespace AupLauncher
 		{
 			ofd.Reset();
 			ofd.ReadOnlyChecked = true;
-			ofd.Filter          = Resources.UI_aud_path_filter;
+			ofd.Filter          = Resources.UI_aud_path_filter + "|audacity.exe";
 			if (ofd.ShowDialog() == DialogResult.OK) {
 				tbox_aud_path.Text = ofd.FileName;
 			}
@@ -55,7 +56,7 @@ namespace AupLauncher
 		{
 			ofd.Reset();
 			ofd.ReadOnlyChecked = true;
-			ofd.Filter          = Resources.UI_cus_path_filter;
+			ofd.Filter          = Resources.UI_cus_path_filter + "|*.exe;*.com;*.bat;*.cmd";
 			if (ofd.ShowDialog() == DialogResult.OK) {
 				tbox_cus_path.Text = ofd.FileName;
 			}
@@ -81,6 +82,7 @@ namespace AupLauncher
 		private void btnReset_Click(object sender, EventArgs e)
 		{
 			Program.Settings.Default.Reset();
+			this.RefreshControls();
 
 			btnReload.Enabled = true;
 			btnSave  .Enabled = true;
@@ -89,18 +91,7 @@ namespace AupLauncher
 		private void btnReload_Click(object sender, EventArgs e)
 		{
 			Program.Settings.LoadFromRegistry();
-			tbox_avi_path.Text        = Program.Settings.Default.AviUtlPath;
-			tbox_avi_args.Text        = Program.Settings.Default.AviUtlArgs;
-			tbox_aud_path.Text        = Program.Settings.Default.AudacityPath;
-			tbox_aud_args.Text        = Program.Settings.Default.AudacityArgs;
-			tbox_cus_path.Text        = Program.Settings.Default.CustomProgramPath;
-			tbox_cus_args.Text        = Program.Settings.Default.CustomProgramArgs;
-			cbox_invfile.SelectedItem = Program.Settings.Default.HandleForInvalidFile.Localized();
-
-			this.SetCustomProgramEnabled();
-
-			btnReload.Enabled = false;
-			btnSave  .Enabled = false;
+			this.RefreshControls();
 		}
 
 		private void btnSave_Click(object sender, EventArgs e)
@@ -129,6 +120,22 @@ namespace AupLauncher
 				Program.Settings.Uninstall();
 				this.Close();
 			}
+		}
+
+		private void RefreshControls()
+		{
+			tbox_avi_path.Text        = Program.Settings.Default.AviUtlPath;
+			tbox_avi_args.Text        = Program.Settings.Default.AviUtlArgs;
+			tbox_aud_path.Text        = Program.Settings.Default.AudacityPath;
+			tbox_aud_args.Text        = Program.Settings.Default.AudacityArgs;
+			tbox_cus_path.Text        = Program.Settings.Default.CustomProgramPath;
+			tbox_cus_args.Text        = Program.Settings.Default.CustomProgramArgs;
+			cbox_invfile.SelectedItem = Program.Settings.Default.HandleForInvalidFile.Localized();
+
+			this.SetCustomProgramEnabled();
+
+			btnReload.Enabled = false;
+			btnSave.Enabled   = false;
 		}
 
 		private void SetCustomProgramEnabled()

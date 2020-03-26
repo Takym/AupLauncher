@@ -14,8 +14,10 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 [assembly: Guid("c174ef44-fedc-42ce-92f7-41d969651530")]
 
-#if DEBUG
+#if REMOTE
+[assembly: AssemblyConfiguration("Any CPU (32-bit preferred); Remote")]
+#elif DEBUG
 [assembly: AssemblyConfiguration("Any CPU (32-bit preferred); Debug")]
 #else
-[assembly: AssemblyConfiguration("Any CPU (64-bit preferred); Debug")]
+[assembly: AssemblyConfiguration("Any CPU (64-bit preferred); Release")]
 #endif

@@ -14,8 +14,8 @@ namespace AupLauncher
 		public const string Description    = "Launcher for AviUtl & Audacity Project Files";
 		public const string Author         = "Takym";
 		public const string Copyright      = "Copyright (C) 2020 Takym.";
-		public const string Version        = "0.0.0.0";
-		public const string CodeName       = "aupl00a0";
+		public const string Version        = "0.0.0.1";
+		public const string CodeName       = "aupl00a1";
 
 		public static Settings Settings { get; private set; }
 
@@ -65,6 +65,10 @@ namespace AupLauncher
 			using (var fs = new FileStream(fname, FileMode.Open, FileAccess.Read, FileShare.Read))
 			using (var br = new BinaryReader(fs, Encoding.UTF8))
 			using (var sr = new StreamReader(fs, Encoding.UTF8)) {
+				if (fs.Length == 0) {
+					return (Settings.Default.HandleForInvalidFile, fname);
+				}
+
 				byte[] sig = br.ReadBytes(_aviutl_signature.Length);
 				if (sig.Length == _aviutl_signature.Length) {
 					for (int i = 0; i < _aviutl_signature.Length; ++i) {
@@ -75,6 +79,7 @@ namespace AupLauncher
 					return (ExecutionKind.AviUtl, fname);
 				}
 audacity:
+				fs.Seek(0, SeekOrigin.Begin);
 				string sig2 = sr.ReadLine().TrimStart();
 				if (sig2.StartsWith("<?xml")) {
 					return (ExecutionKind.Audacity, fname);
@@ -127,8 +132,8 @@ audacity:
 
 		public static string CreateArgs(string format, string args)
 		{
-			string bat = Path.GetTempFileName();
-			File.WriteAllText(bat, $"@echo off\r\necho {format}", Encoding.UTF8);
+			string bat = Path.ChangeExtension(Path.GetTempFileName(), "bat");
+			File.WriteAllText(bat, $"@echo off\r\necho {format}", new UTF8Encoding(false));
 			var psi = new ProcessStartInfo();
 			psi.CreateNoWindow         = true;
 			psi.UseShellExecute        = false;

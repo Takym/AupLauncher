@@ -57,7 +57,7 @@ namespace AupLauncher
 			if (this.IsDisposed) {
 				throw new ObjectDisposedException(nameof(Settings));
 			}
-			var sver = Version.Parse(_reg.GetValue("SavedVersion", "255.255.255.255").ToString());
+			var sver = Version.Parse(_reg.GetValue("SavedVersion", Program.Version).ToString());
 			if (sver <= Program.GetVersion()) {
 				_defkey = _reg.GetValue("DefaultProfile", "_default").ToString();
 				string[] profiles = _reg.GetSubKeyNames();
@@ -164,7 +164,7 @@ namespace AupLauncher
 						using (var verb = shell.CreateSubKey("shell\\open")) {
 							verb.SetValue("", Resources.ShellMenu_Open);
 							using (var cmd = verb.CreateSubKey("command")) {
-								cmd.SetValue("", Application.ExecutablePath);
+								cmd.SetValue("", $"\"{Application.ExecutablePath}\" \"%1\"");
 							}
 						}
 						this.CopyRegistry(shell, shellcls, true);
