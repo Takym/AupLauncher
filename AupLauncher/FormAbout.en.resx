@@ -117,137 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="AupFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>AupFile.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tbox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt, style=Bold</value>
   </data>
-  <data name="DefaultProfileDisplayName" xml:space="preserve">
-    <value>DefaultProfileDisplayName</value>
+  <data name="tbox.Text" xml:space="preserve">
+    <value>Now loading...</value>
   </data>
-  <data name="Description" xml:space="preserve">
-    <value>Description</value>
-  </data>
-  <data name="EK_Audacity" xml:space="preserve">
-    <value>EK_Audacity</value>
-  </data>
-  <data name="EK_AviUtl" xml:space="preserve">
-    <value>EK_AviUtl</value>
-  </data>
-  <data name="EK_InvalidValue" xml:space="preserve">
-    <value>EK_InvalidValue</value>
-  </data>
-  <data name="EK_Nothing" xml:space="preserve">
-    <value>EK_Nothing</value>
-  </data>
-  <data name="EK_RunCustomProgram" xml:space="preserve">
-    <value>EK_RunCustomProgram</value>
-  </data>
-  <data name="EK_ShowError" xml:space="preserve">
-    <value>EK_ShowError</value>
-  </data>
-  <data name="ER_Line1" xml:space="preserve">
-    <value>ER_Line1 {0}</value>
-  </data>
-  <data name="ER_Line2" xml:space="preserve">
-    <value>ER_Line2</value>
-  </data>
-  <data name="ER_Line3" xml:space="preserve">
-    <value>ER_Line3</value>
-  </data>
-  <data name="ER_Line4" xml:space="preserve">
-    <value>ER_Line4 {0} {1}</value>
-  </data>
-  <data name="ER_Line5" xml:space="preserve">
-    <value>ER_Line5 {0:yyyyMMddHHmmssfff}</value>
-  </data>
-  <data name="ER_Line6" xml:space="preserve">
-    <value>ER_Line6 {0}</value>
-  </data>
-  <data name="ER_Line7" xml:space="preserve">
-    <value>ER_Line7 {0}</value>
-  </data>
-  <data name="ER_Line8_Data" xml:space="preserve">
-    <value>ER_Line8_Data</value>
-  </data>
-  <data name="ER_Line8_HelpLink" xml:space="preserve">
-    <value>ER_Line8_HelpLink {0}</value>
-  </data>
-  <data name="ER_Line8_HResult" xml:space="preserve">
-    <value>ER_Line8_HResult {0}</value>
-  </data>
-  <data name="ER_Line8_Message" xml:space="preserve">
-    <value>ER_Line8_Message {0}</value>
-  </data>
-  <data name="ER_Line8_Source" xml:space="preserve">
-    <value>ER_Line8_Source {0}</value>
-  </data>
-  <data name="ER_Line8_SourceFunc" xml:space="preserve">
-    <value>ER_Line8_SourceFunc {0}</value>
-  </data>
-  <data name="ER_Line8_StackTrace" xml:space="preserve">
-    <value>ER_Line8_StackTrace</value>
-  </data>
-  <data name="ER_Line8_Title" xml:space="preserve">
-    <value>ER_Line8_Title {0}</value>
-  </data>
-  <data name="Message_ConfirmClosing" xml:space="preserve">
-    <value>Message_ConfirmClosing</value>
-  </data>
-  <data name="Message_ConfirmUninstalling" xml:space="preserve">
-    <value>Message_ConfirmUninstalling</value>
-  </data>
-  <data name="Message_ErrorReport" xml:space="preserve">
-    <value>Message_ErrorReport {0} {1}</value>
-  </data>
-  <data name="Message_FileNotFound" xml:space="preserve">
-    <value>Message_FileNotFound {0}</value>
-  </data>
-  <data name="Message_InvalidExecutionKind" xml:space="preserve">
-    <value>Message_InvalidExecutionKind</value>
-  </data>
-  <data name="Message_InvalidType" xml:space="preserve">
-    <value>Message_InvalidType {0}</value>
-  </data>
-  <data name="NewProfileDisplayName" xml:space="preserve">
-    <value>NewProfileDisplayName</value>
-  </data>
-  <data name="ShellDescription" xml:space="preserve">
-    <value>ShellDescription</value>
-  </data>
-  <data name="ShellMenu_Open" xml:space="preserve">
-    <value>ShellMenu_Open</value>
-  </data>
-  <data name="UI_aud_path_filter" xml:space="preserve">
-    <value>UI_aud_path_filter</value>
-  </data>
-  <data name="UI_avi_path_filter" xml:space="preserve">
-    <value>UI_avi_path_filter</value>
-  </data>
-  <data name="UI_cus_path_filter" xml:space="preserve">
-    <value>UI_cus_path_filter</value>
-  </data>
-  <data name="V_Line1" xml:space="preserve">
-    <value>V_Line1 {0}</value>
-  </data>
-  <data name="V_Line2" xml:space="preserve">
-    <value>V_Line2 {0}</value>
-  </data>
-  <data name="V_Line3" xml:space="preserve">
-    <value>V_Line3 {0}</value>
-  </data>
-  <data name="V_Line4" xml:space="preserve">
-    <value>V_Line4 {0}</value>
-  </data>
-  <data name="V_Line5" xml:space="preserve">
-    <value>V_Line5 {0}</value>
-  </data>
-  <data name="V_Line6" xml:space="preserve">
-    <value>V_Line6 {0}</value>
-  </data>
-  <data name="V_Line7" xml:space="preserve">
-    <value>V_Line7 {0}</value>
-  </data>
-  <data name="V_Line8" xml:space="preserve">
-    <value>V_Line8 {0}</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Version Information</value>
   </data>
 </root>

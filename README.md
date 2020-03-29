@@ -35,12 +35,14 @@ AviUtl ‚Æ Audacity ‚ÌƒvƒƒWƒFƒNƒgƒtƒ@ƒCƒ‹‚ğ”F¯‚µ“KØ‚ÈƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ğ‹N“®‚µ‚
 * ã‹L‚Ìw¦‚É]‚Á‚Ä³‚µ‚­ƒCƒ“ƒXƒg[ƒ‹‚µ‚½ê‡Au.aupvƒtƒ@ƒCƒ‹‚ğŠJ‚­‚Æ©“®“I‚É AviUtl ‚Ü‚½‚Í Audacity ‚ª‹N“®‚µ‚Ü‚·B
 * ‚Ü‚½Aƒtƒ@ƒCƒ‹–¼‚Ìæ“ª‚Éuaupfile:v‚Æ•t‚¯‚Äƒuƒ‰ƒEƒUEƒGƒNƒXƒvƒ[ƒ‰“™‚ÌƒAƒhƒŒƒXƒo[‚É“ü—Í‚·‚é–‚Å‚à‹N“®‚Å‚«‚Ü‚·B
 * AupLauncher.exe ‚É‰½‚àˆø”‚ğ—^‚¦‚¸‚É‹N“®‚µ‚½ê‡Aİ’è‰æ–Ê‚ªŠJ‚©‚ê‚Ü‚·B
+* İ’è‰æ–Ê‚Ì‰Eã‚Ì[?]ƒ{ƒ^ƒ“‚ğ‰Ÿ‚·‚Æƒo[ƒWƒ‡ƒ“î•ñ‚ª•\¦‚³‚ê‚Ü‚·B
 
 ## ƒo[ƒWƒ‡ƒ“—š—ğ
-|ƒo[ƒWƒ‡ƒ“|ŠJ”­ƒR[ƒh–¼|XV“ú    |“à—e                                                                    |
-|:--------:|:----------:|:---------|:-----------------------------------------------------------------------|
-|v0.0.0.1  |aupl00a1    |2020/03/26|‘O‰ñ‚ÌƒŠƒŠ[ƒX‚Ì•s‹ï‡‚ğ‘å•‚ÉC³‚µ‚Ü‚µ‚½B27“ú‚Ì^–é’†‚ÉŠ®¬‚µ‚Ü‚µ‚½B|
-|v0.0.0.0  |aupl00a0    |2020/03/24|Å‰‚ÌƒŠƒŠ[ƒX‚Å‚·B                                                    |
+|ƒo[ƒWƒ‡ƒ“|ŠJ”­ƒR[ƒh–¼|XV“ú    |“à—e                                          |
+|:--------:|:----------:|:---------|:---------------------------------------------|
+|v0.0.0.2  |aupl00a2    |2020/03/29|ƒo[ƒWƒ‡ƒ“î•ñ‚ğƒAƒvƒŠ“à‚ÅŠm”F‚Å‚«‚é—l‚É‚µ‚½B|
+|v0.0.0.1  |aupl00a1    |2020/03/26|‘O‰ñ‚ÌƒŠƒŠ[ƒX‚Ì•s‹ï‡‚ğ‘å•‚ÉC³‚µ‚½B      |
+|v0.0.0.0  |aupl00a0    |2020/03/24|Å‰‚ÌƒŠƒŠ[ƒXB                              |
 
 <a id="en"></a>
 ## Summary
@@ -72,10 +74,13 @@ Please refer [LICENSE.txt](LICENSE.txt) for more information.
 
 ## How to Use
 * When you followed above direction and installed successfully, the launcher will open ".aup" file with AviUtl or Audacity.
+* The launcher will open if you typed "aupfile:" + the file name in the adress bar.
 * When you executed AupLauncher.exe without any arguments, the launcher will open the settings window.
+* If you want to see a version information, please push a [?] button at right-top on the settings window.
 
 ## Change Log
-|Version   |Code Name   |Update    |Changes                                              |
-|:--------:|:----------:|:---------|:----------------------------------------------------|
-|v0.0.0.1  |aupl00a1    |2020/03/26|Fixed many bugs. This release is made midnight of 27.|
-|v0.0.0.0  |aupl00a0    |2020/03/24|The first release.                                   |
+|Version   |Code Name   |Update    |Changes                            |
+|:--------:|:----------:|:---------|:----------------------------------|
+|v0.0.0.2  |aupl00a2    |2020/03/29|Added a version information dialog.|
+|v0.0.0.1  |aupl00a1    |2020/03/26|Fixed many bugs.                   |
+|v0.0.0.0  |aupl00a0    |2020/03/24|The first release.                 |

@@ -80,6 +80,15 @@ namespace AupLauncher.Properties {
         }
         
         /// <summary>
+        ///   Description に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Description {
+            get {
+                return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   EK_Audacity に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string EK_Audacity {
@@ -269,6 +278,15 @@ namespace AupLauncher.Properties {
         }
         
         /// <summary>
+        ///   Message_ConfirmClosing に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Message_ConfirmClosing {
+            get {
+                return ResourceManager.GetString("Message_ConfirmClosing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Message_ConfirmUninstalling に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Message_ConfirmUninstalling {
@@ -364,6 +382,78 @@ namespace AupLauncher.Properties {
         internal static string UI_cus_path_filter {
             get {
                 return ResourceManager.GetString("UI_cus_path_filter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   V_Line1 {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string V_Line1 {
+            get {
+                return ResourceManager.GetString("V_Line1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   V_Line2 {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string V_Line2 {
+            get {
+                return ResourceManager.GetString("V_Line2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   V_Line3 {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string V_Line3 {
+            get {
+                return ResourceManager.GetString("V_Line3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   V_Line4 {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string V_Line4 {
+            get {
+                return ResourceManager.GetString("V_Line4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   V_Line5 {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string V_Line5 {
+            get {
+                return ResourceManager.GetString("V_Line5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   V_Line6 {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string V_Line6 {
+            get {
+                return ResourceManager.GetString("V_Line6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   V_Line7 {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string V_Line7 {
+            get {
+                return ResourceManager.GetString("V_Line7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   V_Line8 {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string V_Line8 {
+            get {
+                return ResourceManager.GetString("V_Line8", resourceCulture);
             }
         }
     }

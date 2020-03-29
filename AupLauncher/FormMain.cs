@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows.Forms;
 using AupLauncher.Properties;
 
@@ -26,6 +27,28 @@ namespace AupLauncher
 			this.btnReload_Click(sender, e);
 		}
 
+		private void FormMain_HelpButtonClicked(object sender, CancelEventArgs e)
+		{
+			e.Cancel = true;
+			new FormAbout().ShowDialog(this);
+		}
+
+		private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			if (e.CloseReason == CloseReason.UserClosing && btnSave.Enabled) {
+				var dr = MessageBox.Show(
+					Resources.Message_ConfirmClosing,
+					Program.Caption,
+					MessageBoxButtons.YesNoCancel,
+					MessageBoxIcon.Question);
+				if (dr == DialogResult.Yes) {
+					this.btnSave_Click(sender, e);
+				} else if (dr == DialogResult.Cancel) {
+					e.Cancel = true;
+				}
+			}
+		}
+
 		private void btn_avi_path_Click(object sender, EventArgs e)
 		{
 			ofd.Reset();
@@ -34,7 +57,7 @@ namespace AupLauncher
 			if (ofd.ShowDialog() == DialogResult.OK) {
 				tbox_avi_path.Text = ofd.FileName;
 			}
-			
+
 			btnReload.Enabled = true;
 			btnSave  .Enabled = true;
 		}
@@ -47,7 +70,7 @@ namespace AupLauncher
 			if (ofd.ShowDialog() == DialogResult.OK) {
 				tbox_aud_path.Text = ofd.FileName;
 			}
-			
+
 			btnReload.Enabled = true;
 			btnSave  .Enabled = true;
 		}
@@ -60,7 +83,7 @@ namespace AupLauncher
 			if (ofd.ShowDialog() == DialogResult.OK) {
 				tbox_cus_path.Text = ofd.FileName;
 			}
-			
+
 			btnReload.Enabled = true;
 			btnSave  .Enabled = true;
 		}

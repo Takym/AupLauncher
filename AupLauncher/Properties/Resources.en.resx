@@ -124,6 +124,9 @@
   <data name="DefaultProfileDisplayName" xml:space="preserve">
     <value>Default Profile</value>
   </data>
+  <data name="Description" xml:space="preserve">
+    <value>This tool recognizes a project file of AviUtl and Audacity to start a proper application for editing.</value>
+  </data>
   <data name="EK_Audacity" xml:space="preserve">
     <value>Run Audacity</value>
   </data>
@@ -187,6 +190,12 @@
   <data name="ER_Line8_Title" xml:space="preserve">
     <value>## Exception Information ({0})</value>
   </data>
+  <data name="Message_ConfirmClosing" xml:space="preserve">
+    <value>Settings are changed. Do you want to save?
+If you click [Yes] button, save changes and close.
+If you click [No] button, discard changes and close.
+If you click [Cancel] button, will not close the form.</value>
+  </data>
   <data name="Message_ConfirmUninstalling" xml:space="preserve">
     <value>The registry of the extension will be uninstalled and the application will terminate. Please push [Yes] to continue, otherwise [No].</value>
   </data>
@@ -219,5 +228,29 @@
   </data>
   <data name="UI_cus_path_filter" xml:space="preserve">
     <value>All  Executable Programs</value>
+  </data>
+  <data name="V_Line1" xml:space="preserve">
+    <value>Title......: {0}</value>
+  </data>
+  <data name="V_Line2" xml:space="preserve">
+    <value>Developer..: {0}</value>
+  </data>
+  <data name="V_Line3" xml:space="preserve">
+    <value>Copyright..: {0}</value>
+  </data>
+  <data name="V_Line4" xml:space="preserve">
+    <value>Version....: {0}</value>
+  </data>
+  <data name="V_Line5" xml:space="preserve">
+    <value>Code Name..: {0}</value>
+  </data>
+  <data name="V_Line6" xml:space="preserve">
+    <value>Built for..: {0}</value>
+  </data>
+  <data name="V_Line7" xml:space="preserve">
+    <value>Description: {0}</value>
+  </data>
+  <data name="V_Line8" xml:space="preserve">
+    <value>Description: {0}</value>
   </data>
 </root>

@@ -127,9 +127,9 @@
 			// 
 			// cbox_invfile
 			// 
-			resources.ApplyResources(this.cbox_invfile, "cbox_invfile");
 			this.cbox_invfile.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cbox_invfile.FormattingEnabled = true;
+			resources.ApplyResources(this.cbox_invfile, "cbox_invfile");
 			this.cbox_invfile.Name = "cbox_invfile";
 			this.cbox_invfile.SelectedIndexChanged += new System.EventHandler(this.cbox_invfile_SelectedIndexChanged);
 			// 
@@ -147,7 +147,6 @@
 			// 
 			// ofd
 			// 
-			resources.ApplyResources(this.ofd, "ofd");
 			this.ofd.ReadOnlyChecked = true;
 			// 
 			// btn_aud_path
@@ -219,9 +218,12 @@
 			this.Controls.Add(this.labelAviUtlPath);
 			this.Controls.Add(this.labelDesc);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.HelpButton = true;
 			this.Icon = global::AupLauncher.Properties.Resources.AupFile;
 			this.MaximizeBox = false;
 			this.Name = "FormMain";
+			this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.FormMain_HelpButtonClicked);
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
 			this.Load += new System.EventHandler(this.FormMain_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

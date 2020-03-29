@@ -117,140 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbox.Text" xml:space="preserve">
+    <value>tbox</value>
+  </data>
+  <data name="&gt;&gt;tbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 261</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="AupFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>AupFile.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tbox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="DefaultProfileDisplayName" xml:space="preserve">
-    <value>既定のプロファイル</value>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 300</value>
   </data>
-  <data name="Description" xml:space="preserve">
-    <value>AviUtl と Audacity のプロジェクトファイルを認識し適切なアプリケーションを起動します。</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>384, 261</value>
   </data>
-  <data name="EK_Audacity" xml:space="preserve">
-    <value>Audacity を起動する</value>
+  <data name="tbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="EK_AviUtl" xml:space="preserve">
-    <value>AviUtl を起動する</value>
+  <data name="&gt;&gt;tbox.Name" xml:space="preserve">
+    <value>tbox</value>
   </data>
-  <data name="EK_InvalidValue" xml:space="preserve">
-    <value>無効な値です(利用しないでください)</value>
+  <data name="&gt;&gt;tbox.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="EK_Nothing" xml:space="preserve">
-    <value>何もしない</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="EK_RunCustomProgram" xml:space="preserve">
-    <value>カスタムプログラムを起動する</value>
+  <data name="tbox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="EK_ShowError" xml:space="preserve">
-    <value>エラーを表示する</value>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 300</value>
   </data>
-  <data name="ER_Line1" xml:space="preserve">
-    <value>■{0}のエラーレポート</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FormAbout</value>
   </data>
-  <data name="ER_Line2" xml:space="preserve">
-    <value>※このログファイルには個人情報が含まれている可能性があります。</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
   </data>
-  <data name="ER_Line3" xml:space="preserve">
-    <value>※エラーが解決しない場合は開発者(Takym)に提出してください。不具合改善に利用します。</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormAbout</value>
   </data>
-  <data name="ER_Line4" xml:space="preserve">
-    <value>バージョン：{0}、コード名：{1}</value>
-  </data>
-  <data name="ER_Line5" xml:space="preserve">
-    <value>発生時刻  ：{0:yyyy'年'MM'月'dd'日('dddd')' tthh'時('HH'時)'mm'分'ss.fff'秒'}</value>
-  </data>
-  <data name="ER_Line6" xml:space="preserve">
-    <value>プロセスID：{0}</value>
-  </data>
-  <data name="ER_Line7" xml:space="preserve">
-    <value>このファイルの保存場所：{0}</value>
-  </data>
-  <data name="ER_Line8_Data" xml:space="preserve">
-    <value>データ      ：</value>
-  </data>
-  <data name="ER_Line8_HelpLink" xml:space="preserve">
-    <value>ヘルプリンク：{0}</value>
-  </data>
-  <data name="ER_Line8_HResult" xml:space="preserve">
-    <value>H-RESULT    ：0x{0:X08} ({0})</value>
-  </data>
-  <data name="ER_Line8_Message" xml:space="preserve">
-    <value>メッセージ  ：{0}</value>
-  </data>
-  <data name="ER_Line8_Source" xml:space="preserve">
-    <value>発生源      ：{0}</value>
-  </data>
-  <data name="ER_Line8_SourceFunc" xml:space="preserve">
-    <value>発生源の関数：{0} in {1}</value>
-  </data>
-  <data name="ER_Line8_StackTrace" xml:space="preserve">
-    <value>呼び出し履歴：</value>
-  </data>
-  <data name="ER_Line8_Title" xml:space="preserve">
-    <value>□例外の情報 ({0})</value>
-  </data>
-  <data name="Message_ConfirmClosing" xml:space="preserve">
-    <value>設定が変更されています。保存しますか？
-[はい]を押すと変更を保存し終了します。
-[いいえ]を押すと変更を破棄し終了します。
-[キャンセル]を押すと終了しません。</value>
-  </data>
-  <data name="Message_ConfirmUninstalling" xml:space="preserve">
-    <value>拡張子の登録情報をアンインストールし、終了します。続行する場合は [はい] を停止する場合は [いいえ] を押してください。</value>
-  </data>
-  <data name="Message_ErrorReport" xml:space="preserve">
-    <value>予期せぬエラーが発生しました。{0}詳細は「{1}」をご覧ください。</value>
-  </data>
-  <data name="Message_FileNotFound" xml:space="preserve">
-    <value>指定されたファイル「{0}」は存在しません。</value>
-  </data>
-  <data name="Message_InvalidExecutionKind" xml:space="preserve">
-    <value>無効な起動方法が検出されました。設定を変更してください。</value>
-  </data>
-  <data name="Message_InvalidType" xml:space="preserve">
-    <value>指定されたファイル「{0}」は有効なプロジェクトファイルではありません。</value>
-  </data>
-  <data name="NewProfileDisplayName" xml:space="preserve">
-    <value>新しいプロファイル</value>
-  </data>
-  <data name="ShellDescription" xml:space="preserve">
-    <value>AviUtl/Audacity プロジェクトファイル</value>
-  </data>
-  <data name="ShellMenu_Open" xml:space="preserve">
-    <value>AupLauncher で開く(&amp;O)</value>
-  </data>
-  <data name="UI_aud_path_filter" xml:space="preserve">
-    <value>Audacity 実行可能プログラム</value>
-  </data>
-  <data name="UI_avi_path_filter" xml:space="preserve">
-    <value>AviUtl 実行可能プログラム</value>
-  </data>
-  <data name="UI_cus_path_filter" xml:space="preserve">
-    <value>全ての実行可能プログラム</value>
-  </data>
-  <data name="V_Line1" xml:space="preserve">
-    <value>題名　　　　：{0}</value>
-  </data>
-  <data name="V_Line2" xml:space="preserve">
-    <value>開発者　　　：{0}</value>
-  </data>
-  <data name="V_Line3" xml:space="preserve">
-    <value>著作権表記　：{0}</value>
-  </data>
-  <data name="V_Line4" xml:space="preserve">
-    <value>バージョン　：{0}</value>
-  </data>
-  <data name="V_Line5" xml:space="preserve">
-    <value>開発コード名：{0}</value>
-  </data>
-  <data name="V_Line6" xml:space="preserve">
-    <value>ビルド構成　：{0}</value>
-  </data>
-  <data name="V_Line7" xml:space="preserve">
-    <value>短い説明　　：{0}</value>
-  </data>
-  <data name="V_Line8" xml:space="preserve">
-    <value>長い説明　　：{0}</value>
-  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
