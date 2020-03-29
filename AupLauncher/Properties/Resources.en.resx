@@ -145,6 +145,9 @@
   <data name="EK_ShowError" xml:space="preserve">
     <value>Show an error dialog</value>
   </data>
+  <data name="EK_ShowSettings" xml:space="preserve">
+    <value>Show a settings window</value>
+  </data>
   <data name="ER_Line1" xml:space="preserve">
     <value># {0} Error Report</value>
   </data>

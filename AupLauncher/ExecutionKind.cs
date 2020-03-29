@@ -11,6 +11,7 @@ namespace AupLauncher
 		AviUtl           =  1,
 		Audacity         =  2,
 		RunCustomProgram =  3,
+		ShowSettings     =  4
 	}
 
 	public static class ExecutionKindExtension

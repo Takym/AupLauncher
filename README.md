@@ -38,11 +38,12 @@ AviUtl ‚Æ Audacity ‚ÌƒvƒƒWƒFƒNƒgƒtƒ@ƒCƒ‹‚ğ”F¯‚µ“KØ‚ÈƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ğ‹N“®‚µ‚
 * İ’è‰æ–Ê‚Ì‰Eã‚Ì[?]ƒ{ƒ^ƒ“‚ğ‰Ÿ‚·‚Æƒo[ƒWƒ‡ƒ“î•ñ‚ª•\¦‚³‚ê‚Ü‚·B
 
 ## ƒo[ƒWƒ‡ƒ“—š—ğ
-|ƒo[ƒWƒ‡ƒ“|ŠJ”­ƒR[ƒh–¼|XV“ú    |“à—e                                          |
-|:--------:|:----------:|:---------|:---------------------------------------------|
-|v0.0.0.2  |aupl00a2    |2020/03/29|ƒo[ƒWƒ‡ƒ“î•ñ‚ğƒAƒvƒŠ“à‚ÅŠm”F‚Å‚«‚é—l‚É‚µ‚½B|
-|v0.0.0.1  |aupl00a1    |2020/03/26|‘O‰ñ‚ÌƒŠƒŠ[ƒX‚Ì•s‹ï‡‚ğ‘å•‚ÉC³‚µ‚½B      |
-|v0.0.0.0  |aupl00a0    |2020/03/24|Å‰‚ÌƒŠƒŠ[ƒXB                              |
+|ƒo[ƒWƒ‡ƒ“|ŠJ”­ƒR[ƒh–¼|XV“ú    |“à—e                                                                                           |
+|:--------:|:----------:|:---------|:----------------------------------------------------------------------------------------------|
+|v0.0.0.3  |aupl00a3    |2020/03/29|[?]ƒ{ƒ^ƒ“‚ª•\¦‚³‚ê‚È‚¢Œ»Û‚ğC³‚µ‚½B–³Œø‚Èƒtƒ@ƒCƒ‹‚ğŠJ‚¢‚½Aİ’è‰æ–Ê‚ğ•\¦‚Å‚«‚é—l‚É‚µ‚½B|
+|v0.0.0.2  |aupl00a2    |2020/03/29|ƒo[ƒWƒ‡ƒ“î•ñ‚ğƒAƒvƒŠ“à‚ÅŠm”F‚Å‚«‚é—l‚É‚µ‚½B                                                 |
+|v0.0.0.1  |aupl00a1    |2020/03/26|‘O‰ñ‚ÌƒŠƒŠ[ƒX‚Ì•s‹ï‡‚ğ‘å•‚ÉC³‚µ‚½B                                                       |
+|v0.0.0.0  |aupl00a0    |2020/03/24|Å‰‚ÌƒŠƒŠ[ƒXB                                                                               |
 
 <a id="en"></a>
 ## Summary
@@ -79,8 +80,9 @@ Please refer [LICENSE.txt](LICENSE.txt) for more information.
 * If you want to see a version information, please push a [?] button at right-top on the settings window.
 
 ## Change Log
-|Version   |Code Name   |Update    |Changes                            |
-|:--------:|:----------:|:---------|:----------------------------------|
-|v0.0.0.2  |aupl00a2    |2020/03/29|Added a version information dialog.|
-|v0.0.0.1  |aupl00a1    |2020/03/26|Fixed many bugs.                   |
-|v0.0.0.0  |aupl00a0    |2020/03/24|The first release.                 |
+|Version   |Code Name   |Update    |Changes                                                                                  |
+|:--------:|:----------:|:---------|:----------------------------------------------------------------------------------------|
+|v0.0.0.3  |aupl00a3    |2020/03/29|Fixed to show [?] button. Added a handle to show the settings window for an invalid file.|
+|v0.0.0.2  |aupl00a2    |2020/03/29|Added a version information dialog.                                                      |
+|v0.0.0.1  |aupl00a1    |2020/03/26|Fixed many bugs.                                                                         |
+|v0.0.0.0  |aupl00a0    |2020/03/24|The first release.                                                                       |

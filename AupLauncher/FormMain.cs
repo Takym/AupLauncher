@@ -24,6 +24,7 @@ namespace AupLauncher
 			cbox_invfile.Items.Add(ExecutionKind.AviUtl          .Localized());
 			cbox_invfile.Items.Add(ExecutionKind.Audacity        .Localized());
 			cbox_invfile.Items.Add(ExecutionKind.RunCustomProgram.Localized());
+			cbox_invfile.Items.Add(ExecutionKind.ShowSettings    .Localized());
 			this.btnReload_Click(sender, e);
 		}
 

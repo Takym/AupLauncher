@@ -143,6 +143,15 @@ namespace AupLauncher.Properties {
         }
         
         /// <summary>
+        ///   EK_ShowSettings に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string EK_ShowSettings {
+            get {
+                return ResourceManager.GetString("EK_ShowSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   ER_Line1 {0} に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string ER_Line1 {

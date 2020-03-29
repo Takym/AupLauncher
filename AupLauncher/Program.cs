@@ -14,8 +14,8 @@ namespace AupLauncher
 		public const string Description    = "Launcher for AviUtl & Audacity Project Files";
 		public const string Author         = "Takym";
 		public const string Copyright      = "Copyright (C) 2020 Takym.";
-		public const string Version        = "0.0.0.2";
-		public const string CodeName       = "aupl00a2";
+		public const string Version        = "0.0.0.3";
+		public const string CodeName       = "aupl00a3";
 
 		public static Settings Settings { get; private set; }
 
@@ -53,6 +53,9 @@ namespace AupLauncher
 		{
 			if (fname.StartsWith("aupfile:")) {
 				fname = fname.Substring(8);
+			}
+			if (string.IsNullOrEmpty(fname)) {
+				return (ExecutionKind.ShowSettings, Application.ExecutablePath);
 			}
 			if (!File.Exists(fname)) {
 				MessageBox.Show(
@@ -104,6 +107,10 @@ audacity:
 			case ExecutionKind.RunCustomProgram:
 				psi.FileName  = Environment.ExpandEnvironmentVariables(Settings.Default.CustomProgramPath);
 				psi.Arguments = Environment.ExpandEnvironmentVariables(Settings.Default.CustomProgramArgs);
+				break;
+			case ExecutionKind.ShowSettings:
+				psi.FileName  = Application.ExecutablePath;
+				psi.Arguments = string.Empty;
 				break;
 			case ExecutionKind.ShowError:
 				MessageBox.Show(

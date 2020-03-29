@@ -221,6 +221,7 @@
 			this.HelpButton = true;
 			this.Icon = global::AupLauncher.Properties.Resources.AupFile;
 			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "FormMain";
 			this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.FormMain_HelpButtonClicked);
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);

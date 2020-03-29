@@ -25,6 +25,7 @@ namespace AupLauncher
 			sb.AppendFormat(Resources.V_Line6, config.Configuration) .AppendLine();
 			sb.AppendFormat(Resources.V_Line7, Program.Description)  .AppendLine();
 			sb.AppendFormat(Resources.V_Line8, Resources.Description).AppendLine();
+			tbox.Text = sb.ToString();
 		}
 	}
 }

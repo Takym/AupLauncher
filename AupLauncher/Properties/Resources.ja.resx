@@ -145,6 +145,9 @@
   <data name="EK_ShowError" xml:space="preserve">
     <value>エラーを表示する</value>
   </data>
+  <data name="EK_ShowSettings" xml:space="preserve">
+    <value>設定画面を表示する</value>
+  </data>
   <data name="ER_Line1" xml:space="preserve">
     <value>■{0}のエラーレポート</value>
   </data>
