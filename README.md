@@ -40,6 +40,7 @@ AviUtl ‚Æ Audacity ‚ÌƒvƒƒWƒFƒNƒgƒtƒ@ƒCƒ‹‚ğ”F¯‚µ“KØ‚ÈƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ğ‹N“®‚µ‚
 ## ƒo[ƒWƒ‡ƒ“—š—ğ
 |ƒo[ƒWƒ‡ƒ“|ŠJ”­ƒR[ƒh–¼|XV“ú    |“à—e                                                                                           |
 |:--------:|:----------:|:---------|:----------------------------------------------------------------------------------------------|
+|v0.0.0.4  |aupl00a4    |2020/03/31|ƒtƒ@ƒCƒ‹–¼‚Ì‹ó”’‚ğ³‚µ‚­ˆ—‚·‚é—l‚É‚µ‚½B                                                     |
 |v0.0.0.3  |aupl00a3    |2020/03/29|[?]ƒ{ƒ^ƒ“‚ª•\¦‚³‚ê‚È‚¢Œ»Û‚ğC³‚µ‚½B–³Œø‚Èƒtƒ@ƒCƒ‹‚ğŠJ‚¢‚½Aİ’è‰æ–Ê‚ğ•\¦‚Å‚«‚é—l‚É‚µ‚½B|
 |v0.0.0.2  |aupl00a2    |2020/03/29|ƒo[ƒWƒ‡ƒ“î•ñ‚ğƒAƒvƒŠ“à‚ÅŠm”F‚Å‚«‚é—l‚É‚µ‚½B                                                 |
 |v0.0.0.1  |aupl00a1    |2020/03/26|‘O‰ñ‚ÌƒŠƒŠ[ƒX‚Ì•s‹ï‡‚ğ‘å•‚ÉC³‚µ‚½B                                                       |
@@ -82,6 +83,7 @@ Please refer [LICENSE.txt](LICENSE.txt) for more information.
 ## Change Log
 |Version   |Code Name   |Update    |Changes                                                                                  |
 |:--------:|:----------:|:---------|:----------------------------------------------------------------------------------------|
+|v0.0.0.4  |aupl00a4    |2020/03/31|Fixed to process for blanks in a file name.                                              |
 |v0.0.0.3  |aupl00a3    |2020/03/29|Fixed to show [?] button. Added a handle to show the settings window for an invalid file.|
 |v0.0.0.2  |aupl00a2    |2020/03/29|Added a version information dialog.                                                      |
 |v0.0.0.1  |aupl00a1    |2020/03/26|Fixed many bugs.                                                                         |
