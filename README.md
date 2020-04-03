@@ -1,18 +1,26 @@
 # AupLauncher
 Copyright (C) 2020 Takym.
 
+[“ú–{Œê](#ja)
 [English](#en)
 
 <a id="ja"></a>
 ## ŠT—v
 AviUtl ‚Æ Audacity ‚ÌƒvƒƒWƒFƒNƒgƒtƒ@ƒCƒ‹‚ğ”F¯‚µ“KØ‚ÈƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ğ‹N“®‚µ‚Ü‚·B
+Windows 10 (1909) ‚Å“®ìŠm”F‚µ‚Ä‚¢‚Ü‚·B
+
+## ’ˆÓ
+‚±‚ÌƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÍƒŒƒWƒXƒgƒŠ‚ğ•ÏX‚µ‚Ü‚·B
+Às‘O‚ÉƒoƒbƒNƒAƒbƒv‚ğæ‚é–‚ğ‚¨‚·‚·‚ß‚µ‚Ü‚·B
 
 ## —˜—p‹K–ñ
 ‚±‚Ìƒ\ƒtƒgƒEƒFƒA‚ÍMITƒ‰ƒCƒZƒ“ƒX‚Ì‰º‚Å”z•z‚³‚ê‚Ü‚·B
 Ú‚µ‚­‚Í[LICENSE.txt](LICENSE.txt)‚ğ‚²——‚­‚¾‚³‚¢B
 
 ## ƒCƒ“ƒXƒg[ƒ‹•û–@
-0. ‚Ü‚¸Å‰‚É AviUtl ‚Æ Audacity ‚ğƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚­‚¾‚³‚¢B
+0. AviUtl ‚Æ Audacity ‚ªƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚Ä‚¢‚é–‚ğ‘O’ñ‚É“®ì‚µ‚Ü‚·B‚Ü‚¸Å‰‚ÉƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚¨‚¢‚Ä‚­‚¾‚³‚¢B
+	* [AviUtl](http://spring-fragrance.mints.ne.jp/aviutl/)
+	* [Audacity](https://www.audacityteam.org/)
 1. “K“–‚ÈêŠ‚É‰º‹L‚ÌƒtƒHƒ‹ƒ_‚Æƒtƒ@ƒCƒ‹‚ğƒRƒs[‚µ‚Ü‚·B
 	* en
 		* AupLauncher.resources.dll
@@ -40,6 +48,7 @@ AviUtl ‚Æ Audacity ‚ÌƒvƒƒWƒFƒNƒgƒtƒ@ƒCƒ‹‚ğ”F¯‚µ“KØ‚ÈƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ğ‹N“®‚µ‚
 ## ƒo[ƒWƒ‡ƒ“—š—ğ
 |ƒo[ƒWƒ‡ƒ“|ŠJ”­ƒR[ƒh–¼|XV“ú    |“à—e                                                                                           |
 |:--------:|:----------:|:---------|:----------------------------------------------------------------------------------------------|
+|v0.0.0.5  |aupl00a5    |2020/04/03|à–¾‘‚«‚ğ•ª‚©‚èˆÕ‚­C³B                                                                     |
 |v0.0.0.4  |aupl00a4    |2020/03/31|ƒtƒ@ƒCƒ‹–¼‚Ì‹ó”’‚ğ³‚µ‚­ˆ—‚·‚é—l‚É‚µ‚½B                                                     |
 |v0.0.0.3  |aupl00a3    |2020/03/29|[?]ƒ{ƒ^ƒ“‚ª•\¦‚³‚ê‚È‚¢Œ»Û‚ğC³‚µ‚½B–³Œø‚Èƒtƒ@ƒCƒ‹‚ğŠJ‚¢‚½Aİ’è‰æ–Ê‚ğ•\¦‚Å‚«‚é—l‚É‚µ‚½B|
 |v0.0.0.2  |aupl00a2    |2020/03/29|ƒo[ƒWƒ‡ƒ“î•ñ‚ğƒAƒvƒŠ“à‚ÅŠm”F‚Å‚«‚é—l‚É‚µ‚½B                                                 |
@@ -49,13 +58,20 @@ AviUtl ‚Æ Audacity ‚ÌƒvƒƒWƒFƒNƒgƒtƒ@ƒCƒ‹‚ğ”F¯‚µ“KØ‚ÈƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ğ‹N“®‚µ‚
 <a id="en"></a>
 ## Summary
 This tool recognizes a project file of AviUtl and Audacity to start a proper application for editing.
+Operation has been confirmed on Windows 10 (1909).
+
+## Attension
+This application will be change the Windows Registry.
+I should recommend you to backup the registry before a run.
 
 ## Terms of Use
 This software is distributed and licensed under the MIT License.
 Please refer [LICENSE.txt](LICENSE.txt) for more information.
 
 ## How to Install
-0. First, please install both AviUtl and Audacity.
+0. Please make sure that both AviUtl and Audacity is installed already. Download links below:
+	* [AviUtl](http://spring-fragrance.mints.ne.jp/aviutl/)
+	* [Audacity](https://www.audacityteam.org/)
 1. Copy below the application folders and files to some location:
 	* en
 		* AupLauncher.resources.dll
@@ -83,6 +99,7 @@ Please refer [LICENSE.txt](LICENSE.txt) for more information.
 ## Change Log
 |Version   |Code Name   |Update    |Changes                                                                                  |
 |:--------:|:----------:|:---------|:----------------------------------------------------------------------------------------|
+|v0.0.0.5  |aupl00a5    |2020/04/03|Fixed this manual friendly only.                                                         |
 |v0.0.0.4  |aupl00a4    |2020/03/31|Fixed to process for blanks in a file name.                                              |
 |v0.0.0.3  |aupl00a3    |2020/03/29|Fixed to show [?] button. Added a handle to show the settings window for an invalid file.|
 |v0.0.0.2  |aupl00a2    |2020/03/29|Added a version information dialog.                                                      |
