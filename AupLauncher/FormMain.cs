@@ -7,16 +7,31 @@ namespace AupLauncher
 {
 	public partial class FormMain : Form
 	{
-		public FormMain()
+		private bool IsAdministrator()
+		{
+			var identity = System.Security.Principal.WindowsIdentity.GetCurrent();
+			var principal = new System.Security.Principal.WindowsPrincipal(identity);
+			return principal.IsInRole(System.Security.Principal.WindowsBuiltInRole.Administrator);
+		}
+		public FormMain(Settings settingsa)
 		{
 			this.InitializeComponent();
 			this.Text = $"{Program.Caption} [v{Program.Version}, cn:{Program.CodeName}]";
+			Program.Settings = settingsa;
 		}
 
 		private void FormMain_Load(object sender, EventArgs e)
 		{
-			if (!Program.Settings.IsInstalled) {
+			if (!Program.Settings.IsInstalled)
+			{
+				if (IsAdministrator()) { 
 				Program.Settings.Install();
+				}
+				else
+				{
+					MessageBox.Show(this, "管理者権限で実行してください。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					Application.Exit();
+				}
 			}
 			cbox_invfile.Items.Add(ExecutionKind.InvalidValue    .Localized());
 			cbox_invfile.Items.Add(ExecutionKind.ShowError       .Localized());
@@ -135,14 +150,23 @@ namespace AupLauncher
 
 		private void btnUninstall_Click(object sender, EventArgs e)
 		{
-			var dr = MessageBox.Show(
+			if (IsAdministrator())
+			{
+				var dr = MessageBox.Show(
 				Resources.Message_ConfirmUninstalling,
 				Program.Caption,
 				MessageBoxButtons.YesNo,
 				MessageBoxIcon.Question);
-			if (dr == DialogResult.Yes) {
-				Program.Settings.Uninstall();
-				this.Close();
+				if (dr == DialogResult.Yes)
+				{
+					Program.Settings.Uninstall();
+					this.Close();
+				}
+			}
+			else
+			{
+				MessageBox.Show(this, "管理者権限で実行してください。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
 			}
 		}
 

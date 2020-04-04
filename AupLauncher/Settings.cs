@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using AupLauncher.Properties;
 using Microsoft.Win32;
@@ -178,8 +179,9 @@ namespace AupLauncher
 					}
 				}
 			}
-
+			ShellEx_COM_Register();
 			_reg.SetValue("Installed", "TRUE");
+
 		}
 
 		public void Uninstall()
@@ -222,10 +224,61 @@ namespace AupLauncher
 					}
 				}
 			}
-
+			ShellEx_COM_UnRegister();
 			_reg.SetValue("Installed", "FALSE");
 		}
+		private void ShellEx_COM_Register()
+		{
+			string path = System.IO.Path.Combine(RuntimeEnvironment.GetRuntimeDirectory(), "RegAsm.exe");
+			// パスをコンソールに出力
+			//Console.WriteLine("[" + path + "]");
 
+			System.Diagnostics.Process p = new System.Diagnostics.Process();
+			p.StartInfo.FileName = path;
+			// 渡されたコマンドライン引数をそのまま渡す
+			p.StartInfo.Arguments = "/codebase \"" + System.Reflection.Assembly.GetExecutingAssembly().Location + "\"";
+			// 出力を取得できるようにする
+			p.StartInfo.UseShellExecute = false;
+			p.StartInfo.RedirectStandardOutput = true;
+			p.StartInfo.RedirectStandardInput = false;
+			// ウィンドウを表示しない
+			p.StartInfo.CreateNoWindow = true;
+
+			// 起動
+			p.Start();
+
+			// 出力を取得
+			string results = p.StandardOutput.ReadToEnd();
+			// プロセス終了まで待機する
+			p.WaitForExit();
+			p.Close();
+		}
+		private void ShellEx_COM_UnRegister()
+		{
+			string path = System.IO.Path.Combine(RuntimeEnvironment.GetRuntimeDirectory(), "RegAsm.exe");
+			// パスをコンソールに出力
+			//Console.WriteLine("[" + path + "]");
+
+			System.Diagnostics.Process p = new System.Diagnostics.Process();
+			p.StartInfo.FileName = path;
+			// 渡されたコマンドライン引数をそのまま渡す
+			p.StartInfo.Arguments = "/unregister \"" + System.Reflection.Assembly.GetExecutingAssembly().Location + "\"";
+			// 出力を取得できるようにする
+			p.StartInfo.UseShellExecute = false;
+			p.StartInfo.RedirectStandardOutput = true;
+			p.StartInfo.RedirectStandardInput = false;
+			// ウィンドウを表示しない
+			p.StartInfo.CreateNoWindow = true;
+
+			// 起動
+			p.Start();
+
+			// 出力を取得
+			string results = p.StandardOutput.ReadToEnd();
+			// プロセス終了まで待機する
+			p.WaitForExit();
+			p.Close();
+		}
 		private void CopyRegistry(RegistryKey src, RegistryKey dst, bool cleanup)
 		{
 			if (cleanup) {

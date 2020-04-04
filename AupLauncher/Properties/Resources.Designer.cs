@@ -69,6 +69,18 @@ namespace AupLauncher.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
+        internal static System.Drawing.Icon Aviutl {
+            get {
+                object obj = ResourceManager.GetObject("Aviutl", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon Audacity {
+            get {
+                object obj = ResourceManager.GetObject("Audacity", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
         
         /// <summary>
         ///   DefaultProfileDisplayName に類似しているローカライズされた文字列を検索します。

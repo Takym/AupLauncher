@@ -17,7 +17,84 @@ namespace AupLauncher
 		public const string Version        = "0.0.0.5";
 		public const string CodeName       = "aupl00a5";
 
-		public static Settings Settings { get; private set; }
+		public static Settings Settings { get;  set; }
+		public static string Get_Resources_Message_FileNotFound()
+		{
+			return Resources.Message_FileNotFound;
+		}
+		public static string Get_Resources_Message_InvalidType()
+		{
+			return Resources.Message_InvalidType;
+		}
+		public static string Get_Resources_Message_InvalidExecutionKind()
+		{
+			return Resources.Message_InvalidExecutionKind;
+		}
+		public static string Get_Resources_Message_ErrorReport()
+		{
+			return Resources.Message_ErrorReport;
+		}
+		
+		public static string Get_Resources_ER_LINE_1()
+		{
+			return Resources.ER_Line1;
+		}
+		public static string Get_Resources_ER_LINE_2()
+		{
+			return Resources.ER_Line2;
+		}
+		public static string Get_Resources_ER_LINE_3()
+		{
+			return Resources.ER_Line3;
+		}
+		public static string Get_Resources_ER_LINE_4()
+		{
+			return Resources.ER_Line4;
+		}
+		public static string Get_Resources_ER_LINE_5()
+		{
+			return Resources.ER_Line5;
+		}
+		public static string Get_Resources_ER_LINE_6()
+		{
+			return Resources.ER_Line6;
+		}
+		public static string Get_Resources_ER_LINE_7()
+		{
+			return Resources.ER_Line7;
+		}
+		public static string Get_Resources_ER_LINE_8_Data()
+		{
+			return Resources.ER_Line8_Data;
+		}
+		public static string Get_Resources_ER_LINE_8_HelpLink()
+		{
+			return Resources.ER_Line8_HelpLink;
+		}
+		public static string Get_Resources_ER_LINE_8_HResult()
+		{
+			return Resources.ER_Line8_HResult;
+		}
+		public static string Get_Resources_ER_LINE_8_Message()
+		{
+			return Resources.ER_Line8_Message;
+		}
+		public static string Get_Resources_ER_LINE_8_Source()
+		{
+			return Resources.ER_Line8_Source;
+		}
+		public static string Get_Resources_ER_LINE_8_SourceFunc()
+		{
+			return Resources.ER_Line8_SourceFunc;
+		}
+		public static string Get_Resources_ER_LINE_8_StackTrace()
+		{
+			return Resources.ER_Line8_StackTrace;
+		}
+		public static string Get_Resources_ER_LINE_8_Title()
+		{
+			return Resources.ER_Line8_Title;
+		}
 
 		[STAThread()]
 		internal static int Main(string[] args)
@@ -33,7 +110,7 @@ namespace AupLauncher
 					} else {
 						Application.EnableVisualStyles();
 						Application.SetCompatibleTextRenderingDefault(false);
-						Application.Run(new FormMain());
+						Application.Run(new FormMain(Settings));
 						return 0;
 					}
 				}
