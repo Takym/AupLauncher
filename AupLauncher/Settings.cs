@@ -179,7 +179,7 @@ namespace AupLauncher
 					}
 				}
 			}
-			ShellEx_COM_Register();
+			ShellEx_COM_Register();		//COMを登録
 			_reg.SetValue("Installed", "TRUE");
 
 		}
@@ -224,7 +224,7 @@ namespace AupLauncher
 					}
 				}
 			}
-			ShellEx_COM_UnRegister();
+			ShellEx_COM_UnRegister();//COMを登録解除
 			_reg.SetValue("Installed", "FALSE");
 		}
 		private void ShellEx_COM_Register()
