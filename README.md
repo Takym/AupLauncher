@@ -1,60 +1,60 @@
 # AupLauncher
 Copyright (C) 2020 Takym and kokkiemouse.
 
-[“ú–{Œê](#ja)
+[æ—¥æœ¬èªž](#ja)
 [English](#en)
 
 <a id="ja"></a>
-## ŠT—v
-AviUtl ‚Æ Audacity ‚ÌƒvƒƒWƒFƒNƒgƒtƒ@ƒCƒ‹‚ð”FŽ¯‚µ“KØ‚ÈƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ð‹N“®‚µ‚Ü‚·B
-Windows 10 (2004) ‚Å“®ìŠm”F‚µ‚Ä‚¢‚Ü‚·B
+## æ¦‚è¦
+AviUtl ã¨ Audacity ã®ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆãƒ•ã‚¡ã‚¤ãƒ«ã‚’èªè­˜ã—é©åˆ‡ãªã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚’èµ·å‹•ã—ã¾ã™ã€‚
+Windows 10 (2004) ã§å‹•ä½œç¢ºèªã—ã¦ã„ã¾ã™ã€‚
 
-## ’ˆÓ
-‚±‚ÌƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÍƒŒƒWƒXƒgƒŠ‚ð•ÏX‚µ‚Ü‚·B
-ŽÀs‘O‚ÉƒoƒbƒNƒAƒbƒv‚ðŽæ‚éŽ–‚ð‚¨‚·‚·‚ß‚µ‚Ü‚·B
+## æ³¨æ„
+ã“ã®ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã¯ãƒ¬ã‚¸ã‚¹ãƒˆãƒªã‚’å¤‰æ›´ã—ã¾ã™ã€‚
+å®Ÿè¡Œå‰ã«ãƒãƒƒã‚¯ã‚¢ãƒƒãƒ—ã‚’å–ã‚‹äº‹ã‚’ãŠã™ã™ã‚ã—ã¾ã™ã€‚
 
-## —˜—p‹K–ñ
-‚±‚Ìƒ\ƒtƒgƒEƒFƒA‚ÍMITƒ‰ƒCƒZƒ“ƒX‚Ì‰º‚Å”z•z‚³‚ê‚Ü‚·B
-Ú‚µ‚­‚Í[LICENSE.txt](LICENSE.txt)‚ð‚²——‚­‚¾‚³‚¢B
+## åˆ©ç”¨è¦ç´„
+ã“ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã¯MITãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã®ä¸‹ã§é…å¸ƒã•ã‚Œã¾ã™ã€‚
+è©³ã—ãã¯[LICENSE.txt](LICENSE.txt)ã‚’ã”è¦§ãã ã•ã„ã€‚
 
-## ƒCƒ“ƒXƒg[ƒ‹•û–@
-0. AviUtl ‚Æ Audacity ‚ªƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚Ä‚¢‚éŽ–‚ð‘O’ñ‚É“®ì‚µ‚Ü‚·B‚Ü‚¸Å‰‚ÉƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚¨‚¢‚Ä‚­‚¾‚³‚¢B
+## ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«æ–¹æ³•
+0. AviUtl ã¨ Audacity ãŒã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¦ã„ã‚‹äº‹ã‚’å‰æã«å‹•ä½œã—ã¾ã™ã€‚ã¾ãšæœ€åˆã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¦ãŠã„ã¦ãã ã•ã„ã€‚
 	* [AviUtl](http://spring-fragrance.mints.ne.jp/aviutl/)
 	* [Audacity](https://www.audacityteam.org/)
-1. “K“–‚ÈêŠ‚É‰º‹L‚ÌƒtƒHƒ‹ƒ_‚Æƒtƒ@ƒCƒ‹‚ðƒRƒs[‚µ‚Ü‚·B
+1. é©å½“ãªå ´æ‰€ã«ä¸‹è¨˜ã®ãƒ•ã‚©ãƒ«ãƒ€ã¨ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚³ãƒ”ãƒ¼ã—ã¾ã™ã€‚
 	* en
 		* AupLauncher.resources.dll
 	* ja
 		* AupLauncher.resources.dll
 	* AupLauncher.exe
 	* AupLauncher.exe.config
-2. AupLauncher.exe ‚ð‰EƒNƒŠƒbƒN‚µŠÇ—ŽÒ‚Æ‚µ‚ÄŽÀs‚µ‚Ü‚·B‚·‚é‚ÆAŠg’£Žqî•ñ‚ªŽ©“®“I‚ÉŠÖ˜A•t‚¯‚ç‚ê‚Ü‚·B
-3. Ý’è€–Ú‚ðŠÂ‹«‚É‡‚í‚¹‚ÄC³‚µ‚Ü‚·B
-4. •ÏX‚ð•Û‘¶‚µ‚Ü‚·B
-5. ƒCƒ“ƒXƒg[ƒ‹Š®—¹‚Å‚·B
+2. AupLauncher.exe ã‚’å³ã‚¯ãƒªãƒƒã‚¯ã—ç®¡ç†è€…ã¨ã—ã¦å®Ÿè¡Œã—ã¾ã™ã€‚ã™ã‚‹ã¨ã€æ‹¡å¼µå­æƒ…å ±ãŒè‡ªå‹•çš„ã«é–¢é€£ä»˜ã‘ã‚‰ã‚Œã¾ã™ã€‚
+3. è¨­å®šé …ç›®ã‚’ç’°å¢ƒã«åˆã‚ã›ã¦ä¿®æ­£ã—ã¾ã™ã€‚
+4. å¤‰æ›´ã‚’ä¿å­˜ã—ã¾ã™ã€‚
+5. ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å®Œäº†ã§ã™ã€‚
 
-## ƒAƒ“ƒCƒ“ƒXƒg[ƒ‹•û–@
-1. Ý’è‰æ–Ê‚ðŠJ‚«‚Ü‚·B
-2. [ƒAƒ“ƒCƒ“ƒXƒg[ƒ‹] ƒ{ƒ^ƒ“‚ð‰Ÿ‚µ‚Ü‚·B
-3. ƒƒbƒZ[ƒW‚ª•\Ž¦‚³‚ê‚½‚ç [‚Í‚¢] ‚ð‘I‘ð‚µ‚Ü‚·B
-4. ŠÖ˜AƒtƒHƒ‹ƒ_‚Æƒtƒ@ƒCƒ‹‚ðŽè“®‚Åíœ‚µ‚Ü‚·B
+## ã‚¢ãƒ³ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«æ–¹æ³•
+1. è¨­å®šç”»é¢ã‚’é–‹ãã¾ã™ã€‚
+2. [ã‚¢ãƒ³ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«] ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ã¾ã™ã€‚
+3. ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰ [ã¯ã„] ã‚’é¸æŠžã—ã¾ã™ã€‚
+4. é–¢é€£ãƒ•ã‚©ãƒ«ãƒ€ã¨ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ‰‹å‹•ã§å‰Šé™¤ã—ã¾ã™ã€‚
 
-## Žg‚¢•û
-* ã‹L‚ÌŽwŽ¦‚É]‚Á‚Ä³‚µ‚­ƒCƒ“ƒXƒg[ƒ‹‚µ‚½ê‡Au.aupvƒtƒ@ƒCƒ‹‚ðŠJ‚­‚ÆŽ©“®“I‚É AviUtl ‚Ü‚½‚Í Audacity ‚ª‹N“®‚µ‚Ü‚·B
-* ‚Ü‚½Aƒtƒ@ƒCƒ‹–¼‚Ìæ“ª‚Éuaupfile:v‚Æ•t‚¯‚Äƒuƒ‰ƒEƒUEƒGƒNƒXƒvƒ[ƒ‰“™‚ÌƒAƒhƒŒƒXƒo[‚É“ü—Í‚·‚éŽ–‚Å‚à‹N“®‚Å‚«‚Ü‚·B
-* AupLauncher.exe ‚É‰½‚àˆø”‚ð—^‚¦‚¸‚É‹N“®‚µ‚½ê‡AÝ’è‰æ–Ê‚ªŠJ‚©‚ê‚Ü‚·B
-* Ý’è‰æ–Ê‚Ì‰Eã‚Ì[?]ƒ{ƒ^ƒ“‚ð‰Ÿ‚·‚Æƒo[ƒWƒ‡ƒ“î•ñ‚ª•\Ž¦‚³‚ê‚Ü‚·B
+## ä½¿ã„æ–¹
+* ä¸Šè¨˜ã®æŒ‡ç¤ºã«å¾“ã£ã¦æ­£ã—ãã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ãŸå ´åˆã€ã€Œ.aupã€ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é–‹ãã¨è‡ªå‹•çš„ã« AviUtl ã¾ãŸã¯ Audacity ãŒèµ·å‹•ã—ã¾ã™ã€‚
+* ã¾ãŸã€ãƒ•ã‚¡ã‚¤ãƒ«åã®å…ˆé ­ã«ã€Œaupfile:ã€ã¨ä»˜ã‘ã¦ãƒ–ãƒ©ã‚¦ã‚¶ãƒ»ã‚¨ã‚¯ã‚¹ãƒ—ãƒ­ãƒ¼ãƒ©ç­‰ã®ã‚¢ãƒ‰ãƒ¬ã‚¹ãƒãƒ¼ã«å…¥åŠ›ã™ã‚‹äº‹ã§ã‚‚èµ·å‹•ã§ãã¾ã™ã€‚
+* AupLauncher.exe ã«ä½•ã‚‚å¼•æ•°ã‚’ä¸Žãˆãšã«èµ·å‹•ã—ãŸå ´åˆã€è¨­å®šç”»é¢ãŒé–‹ã‹ã‚Œã¾ã™ã€‚
+* è¨­å®šç”»é¢ã®å³ä¸Šã®[?]ãƒœã‚¿ãƒ³ã‚’æŠ¼ã™ã¨ãƒãƒ¼ã‚¸ãƒ§ãƒ³æƒ…å ±ãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚
 
-## ƒo[ƒWƒ‡ƒ“—š—ð
-|ƒo[ƒWƒ‡ƒ“|ŠJ”­ƒR[ƒh–¼|XV“ú    |“à—e                                                                                           |
+## ãƒãƒ¼ã‚¸ãƒ§ãƒ³å±¥æ­´
+|ãƒãƒ¼ã‚¸ãƒ§ãƒ³|é–‹ç™ºã‚³ãƒ¼ãƒ‰å|æ›´æ–°æ—¥    |å†…å®¹                                                                                           |
 |:--------:|:----------:|:---------|:----------------------------------------------------------------------------------------------|
-|v0.0.0.6  |aupl00a6    |2020/04/04|ƒTƒ€ƒl‚Å‹æ•Ê‚Å‚«‚é‹@”\‚ð’Ç‰ÁB                                                                    |
-|v0.0.0.5  |aupl00a5    |2020/04/03|à–¾‘‚«‚ð•ª‚©‚èˆÕ‚­C³B                                                                     |
-|v0.0.0.4  |aupl00a4    |2020/03/31|ƒtƒ@ƒCƒ‹–¼‚Ì‹ó”’‚ð³‚µ‚­ˆ—‚·‚é—l‚É‚µ‚½B                                                     |
-|v0.0.0.3  |aupl00a3    |2020/03/29|[?]ƒ{ƒ^ƒ“‚ª•\Ž¦‚³‚ê‚È‚¢Œ»Û‚ðC³‚µ‚½B–³Œø‚Èƒtƒ@ƒCƒ‹‚ðŠJ‚¢‚½ŽžAÝ’è‰æ–Ê‚ð•\Ž¦‚Å‚«‚é—l‚É‚µ‚½B|
-|v0.0.0.2  |aupl00a2    |2020/03/29|ƒo[ƒWƒ‡ƒ“î•ñ‚ðƒAƒvƒŠ“à‚ÅŠm”F‚Å‚«‚é—l‚É‚µ‚½B                                                 |
-|v0.0.0.1  |aupl00a1    |2020/03/26|‘O‰ñ‚ÌƒŠƒŠ[ƒX‚Ì•s‹ï‡‚ð‘å•‚ÉC³‚µ‚½B                                                       |
-|v0.0.0.0  |aupl00a0    |2020/03/24|Å‰‚ÌƒŠƒŠ[ƒXB                                                                               |
+|v0.0.0.5  |Derived From aupl00a5|2020/04/04|ã‚µãƒ ãƒã§åŒºåˆ¥ã§ãã‚‹æ©Ÿèƒ½ã‚’è¿½åŠ ã€‚                                                                    |
+|v0.0.0.5  |aupl00a5    |2020/04/03|èª¬æ˜Žæ›¸ãã‚’åˆ†ã‹ã‚Šæ˜“ãä¿®æ­£ã€‚                                                                     |
+|v0.0.0.4  |aupl00a4    |2020/03/31|ãƒ•ã‚¡ã‚¤ãƒ«åã®ç©ºç™½ã‚’æ­£ã—ãå‡¦ç†ã™ã‚‹æ§˜ã«ã—ãŸã€‚                                                     |
+|v0.0.0.3  |aupl00a3    |2020/03/29|[?]ãƒœã‚¿ãƒ³ãŒè¡¨ç¤ºã•ã‚Œãªã„ç¾è±¡ã‚’ä¿®æ­£ã—ãŸã€‚ç„¡åŠ¹ãªãƒ•ã‚¡ã‚¤ãƒ«ã‚’é–‹ã„ãŸæ™‚ã€è¨­å®šç”»é¢ã‚’è¡¨ç¤ºã§ãã‚‹æ§˜ã«ã—ãŸã€‚|
+|v0.0.0.2  |aupl00a2    |2020/03/29|ãƒãƒ¼ã‚¸ãƒ§ãƒ³æƒ…å ±ã‚’ã‚¢ãƒ—ãƒªå†…ã§ç¢ºèªã§ãã‚‹æ§˜ã«ã—ãŸã€‚                                                 |
+|v0.0.0.1  |aupl00a1    |2020/03/26|å‰å›žã®ãƒªãƒªãƒ¼ã‚¹ã®ä¸å…·åˆã‚’å¤§å¹…ã«ä¿®æ­£ã—ãŸã€‚                                                       |
+|v0.0.0.0  |aupl00a0    |2020/03/24|æœ€åˆã®ãƒªãƒªãƒ¼ã‚¹ã€‚                                                                               |
 
 <a id="en"></a>
 ## Summary
@@ -100,7 +100,7 @@ Please refer [LICENSE.txt](LICENSE.txt) for more information.
 ## Change Log
 |Version   |Code Name   |Update    |Changes                                                                                  |
 |:--------:|:----------:|:---------|:----------------------------------------------------------------------------------------|
-|v0.0.0.6  |aupl00a6    |2020/04/04|Thumbnail function add.                                                         |
+|v0.0.0.5  |Derived From aupl00a|2020/04/04|Thumbnail function add.                                                         |
 |v0.0.0.5  |aupl00a5    |2020/04/03|Fixed this manual friendly only.                                                         |
 |v0.0.0.4  |aupl00a4    |2020/03/31|Fixed to process for blanks in a file name.                                              |
 |v0.0.0.3  |aupl00a3    |2020/03/29|Fixed to show [?] button. Added a handle to show the settings window for an invalid file.|
