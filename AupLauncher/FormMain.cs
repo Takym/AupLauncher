@@ -7,6 +7,7 @@ namespace AupLauncher
 {
 	public partial class FormMain : Form
 	{
+		private readonly LocalizedExecutionKind _ek_invalid_value = ExecutionKind.InvalidValue.Localized();
 		private bool IsAdministrator()
 		{
 			var identity = System.Security.Principal.WindowsIdentity.GetCurrent();
@@ -32,8 +33,8 @@ namespace AupLauncher
 					MessageBox.Show(this, "管理者権限で実行してください。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
 					Application.Exit();
 				}
+
 			}
-			cbox_invfile.Items.Add(ExecutionKind.InvalidValue    .Localized());
 			cbox_invfile.Items.Add(ExecutionKind.ShowError       .Localized());
 			cbox_invfile.Items.Add(ExecutionKind.Nothing         .Localized());
 			cbox_invfile.Items.Add(ExecutionKind.AviUtl          .Localized());
@@ -135,6 +136,11 @@ namespace AupLauncher
 
 		private void btnSave_Click(object sender, EventArgs e)
 		{
+
+			if (!_ek_invalid_value.Equals(cbox_invfile.SelectedItem))
+			{
+				cbox_invfile.Items.Remove(_ek_invalid_value);
+			}
 			Program.Settings.Default.AviUtlPath           = tbox_avi_path.Text;
 			Program.Settings.Default.AviUtlArgs           = tbox_avi_args.Text;
 			Program.Settings.Default.AudacityPath         = tbox_aud_path.Text;
@@ -172,13 +178,22 @@ namespace AupLauncher
 
 		private void RefreshControls()
 		{
+			var hfif = Program.Settings.Default.HandleForInvalidFile;
+			if (cbox_invfile.Items.Contains(_ek_invalid_value))
+			{
+				cbox_invfile.Items.Remove(_ek_invalid_value);
+			}
+			if (hfif == ExecutionKind.InvalidValue)
+			{
+				cbox_invfile.Items.Add(_ek_invalid_value);
+			}
 			tbox_avi_path.Text        = Program.Settings.Default.AviUtlPath;
 			tbox_avi_args.Text        = Program.Settings.Default.AviUtlArgs;
 			tbox_aud_path.Text        = Program.Settings.Default.AudacityPath;
 			tbox_aud_args.Text        = Program.Settings.Default.AudacityArgs;
 			tbox_cus_path.Text        = Program.Settings.Default.CustomProgramPath;
 			tbox_cus_args.Text        = Program.Settings.Default.CustomProgramArgs;
-			cbox_invfile.SelectedItem = Program.Settings.Default.HandleForInvalidFile.Localized();
+			cbox_invfile.SelectedItem = hfif.Localized();
 
 			this.SetCustomProgramEnabled();
 
