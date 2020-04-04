@@ -14,8 +14,8 @@ namespace AupLauncher
 		public const string Description    = "Launcher for AviUtl & Audacity Project Files";
 		public const string Author         = "Takym";
 		public const string Copyright      = "Copyright (C) 2020 Takym.";
-		public const string Version        = "0.0.0.5";
-		public const string CodeName       = "aupl00a5";
+		public const string Version        = "0.0.0.6";
+		public const string CodeName       = "aupl00a6";
 
 		public static Settings Settings { get; private set; }
 

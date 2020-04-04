@@ -48,6 +48,7 @@ Windows 10 (1909) で動作確認しています。
 ## バージョン履歴
 |バージョン|開発コード名|更新日    |内容                                                                                           |
 |:--------:|:----------:|:---------|:----------------------------------------------------------------------------------------------|
+|v0.0.0.6  |aupl00a6    |2020/04/04|無効なファイルの処理の「無効な値」を非表示にした。                                             |
 |v0.0.0.5  |aupl00a5    |2020/04/03|説明書きを分かり易く修正。                                                                     |
 |v0.0.0.4  |aupl00a4    |2020/03/31|ファイル名の空白を正しく処理する様にした。                                                     |
 |v0.0.0.3  |aupl00a3    |2020/03/29|[?]ボタンが表示されない現象を修正した。無効なファイルを開いた時、設定画面を表示できる様にした。|
@@ -99,6 +100,7 @@ Please refer [LICENSE.txt](LICENSE.txt) for more information.
 ## Change Log
 |Version   |Code Name   |Update    |Changes                                                                                  |
 |:--------:|:----------:|:---------|:----------------------------------------------------------------------------------------|
+|v0.0.0.6  |aupl00a6    |2020/04/04|Invisibled the "invalid value" item of handles for an invalid file.                      |
 |v0.0.0.5  |aupl00a5    |2020/04/03|Fixed this manual friendly only.                                                         |
 |v0.0.0.4  |aupl00a4    |2020/03/31|Fixed to process for blanks in a file name.                                              |
 |v0.0.0.3  |aupl00a3    |2020/03/29|Fixed to show [?] button. Added a handle to show the settings window for an invalid file.|
