@@ -193,4 +193,10 @@
   <data name="btnSave.Text" xml:space="preserve">
     <value>保存</value>
   </data>
+  <data name="btnComInstall.Text" xml:space="preserve">
+    <value>動的アイコンのインストール</value>
+  </data>
+  <data name="btnComUnInstall.Text" xml:space="preserve">
+    <value>動的アイコンの削除</value>
+  </data>
 </root>

@@ -259,4 +259,16 @@
   <data name="V_Line8" xml:space="preserve">
     <value>V_Line8 {0}</value>
   </data>
+  <data name="Message_COMInstalled" xml:space="preserve">
+    <value>Message_COMInstalled</value>
+  </data>
+  <data name="Message_COMUnInstalled" xml:space="preserve">
+    <value>Message_COMUnInstalled</value>
+  </data>
+  <data name="Message_Installed" xml:space="preserve">
+    <value>Message_Installed</value>
+  </data>
+  <data name="Message_UnInstalled" xml:space="preserve">
+    <value>Message_UnInstalled</value>
+  </data>
 </root>

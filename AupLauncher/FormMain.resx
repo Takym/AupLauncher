@@ -144,7 +144,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelDesc.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>23</value>
   </data>
   <data name="labelAviUtlPath.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -171,7 +171,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelAviUtlPath.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="labelAudacityPath.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -198,7 +198,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelAudacityPath.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="labelCustomPath.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -225,7 +225,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelCustomPath.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="labelAviUtlArgs.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -252,7 +252,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelAviUtlArgs.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="labelAudacityArgs.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -279,7 +279,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelAudacityArgs.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="labelCustomArgs.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -306,13 +306,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelCustomArgs.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="tbox_avi_path.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 56</value>
   </data>
   <data name="tbox_avi_path.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 19</value>
+    <value>596, 19</value>
   </data>
   <data name="tbox_avi_path.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -330,13 +330,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbox_avi_path.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="tbox_avi_args.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 88</value>
   </data>
   <data name="tbox_avi_args.Size" type="System.Drawing.Size, System.Drawing">
-    <value>520, 19</value>
+    <value>620, 19</value>
   </data>
   <data name="tbox_avi_args.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -354,13 +354,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbox_avi_args.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="tbox_aud_path.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 120</value>
   </data>
   <data name="tbox_aud_path.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 19</value>
+    <value>596, 19</value>
   </data>
   <data name="tbox_aud_path.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -378,13 +378,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbox_aud_path.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="tbox_aud_args.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 152</value>
   </data>
   <data name="tbox_aud_args.Size" type="System.Drawing.Size, System.Drawing">
-    <value>520, 19</value>
+    <value>620, 19</value>
   </data>
   <data name="tbox_aud_args.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -402,13 +402,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbox_aud_args.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="tbox_cus_path.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 184</value>
   </data>
   <data name="tbox_cus_path.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 19</value>
+    <value>596, 19</value>
   </data>
   <data name="tbox_cus_path.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -426,13 +426,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbox_cus_path.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="tbox_cus_args.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 216</value>
   </data>
   <data name="tbox_cus_args.Size" type="System.Drawing.Size, System.Drawing">
-    <value>520, 19</value>
+    <value>620, 19</value>
   </data>
   <data name="tbox_cus_args.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -450,7 +450,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbox_cus_args.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="cbox_invfile.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 248</value>
@@ -471,7 +471,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cbox_invfile.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="labelInvfile.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -498,10 +498,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelInvfile.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="btn_avi_path.Location" type="System.Drawing.Point, System.Drawing">
-    <value>608, 54</value>
+    <value>708, 54</value>
   </data>
   <data name="btn_avi_path.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 23</value>
@@ -522,13 +522,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_avi_path.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <metadata name="ofd.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <data name="btn_aud_path.Location" type="System.Drawing.Point, System.Drawing">
-    <value>608, 118</value>
+    <value>708, 118</value>
   </data>
   <data name="btn_aud_path.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 23</value>
@@ -549,10 +549,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_aud_path.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="btn_cus_path.Location" type="System.Drawing.Point, System.Drawing">
-    <value>608, 182</value>
+    <value>708, 182</value>
   </data>
   <data name="btn_cus_path.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 23</value>
@@ -573,7 +573,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_cus_path.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 288</value>
@@ -597,10 +597,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnReset.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="btnUninstall.Location" type="System.Drawing.Point, System.Drawing">
-    <value>536, 288</value>
+    <value>636, 288</value>
   </data>
   <data name="btnUninstall.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -621,7 +621,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnUninstall.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="btnReload.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 288</value>
@@ -645,7 +645,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnReload.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
     <value>216, 288</value>
@@ -669,6 +669,54 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnComInstall.Location" type="System.Drawing.Point, System.Drawing">
+    <value>323, 288</value>
+  </data>
+  <data name="btnComInstall.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 23</value>
+  </data>
+  <data name="btnComInstall.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="btnComInstall.Text" xml:space="preserve">
+    <value>btnComInstall</value>
+  </data>
+  <data name="&gt;&gt;btnComInstall.Name" xml:space="preserve">
+    <value>btnComInstall</value>
+  </data>
+  <data name="&gt;&gt;btnComInstall.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnComInstall.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnComInstall.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnComUnInstall.Location" type="System.Drawing.Point, System.Drawing">
+    <value>479, 288</value>
+  </data>
+  <data name="btnComUnInstall.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 23</value>
+  </data>
+  <data name="btnComUnInstall.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="btnComUnInstall.Text" xml:space="preserve">
+    <value>btnComUnInstall</value>
+  </data>
+  <data name="&gt;&gt;btnComUnInstall.Name" xml:space="preserve">
+    <value>btnComUnInstall</value>
+  </data>
+  <data name="&gt;&gt;btnComUnInstall.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnComUnInstall.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnComUnInstall.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -678,13 +726,17 @@
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>640, 320</value>
+    <value>740, 320</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>656, 359</value>
+    <value>756, 359</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>656, 359</value>
+    <value>756, 359</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FormMain</value>

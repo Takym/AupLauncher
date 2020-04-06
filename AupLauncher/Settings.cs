@@ -179,13 +179,13 @@ namespace AupLauncher
 					}
 				}
 			}
-			ShellEx_COM_Register();		//COMを登録
 			_reg.SetValue("Installed", "TRUE");
 
 		}
 
 		public void Uninstall()
 		{
+			ShellEx_COM_UnRegister();//COMを登録解除
 			using (var cls = Registry.CurrentUser.CreateSubKey($"Software\\Classes")) {
 				// バックアップ情報で上書き。
 				using (var backup = _reg.CreateSubKey($"{_defkey}\\Backup")) {
@@ -224,10 +224,9 @@ namespace AupLauncher
 					}
 				}
 			}
-			ShellEx_COM_UnRegister();//COMを登録解除
 			_reg.SetValue("Installed", "FALSE");
 		}
-		private void ShellEx_COM_Register()
+		public void ShellEx_COM_Register()
 		{
 			string path = System.IO.Path.Combine(RuntimeEnvironment.GetRuntimeDirectory(), "RegAsm.exe");
 			// パスをコンソールに出力
@@ -253,7 +252,7 @@ namespace AupLauncher
 			p.WaitForExit();
 			p.Close();
 		}
-		private void ShellEx_COM_UnRegister()
+		public void ShellEx_COM_UnRegister()
 		{
 			string path = System.IO.Path.Combine(RuntimeEnvironment.GetRuntimeDirectory(), "RegAsm.exe");
 			// パスをコンソールに出力

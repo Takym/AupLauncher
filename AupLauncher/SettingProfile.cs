@@ -16,6 +16,7 @@ namespace AupLauncher
 		public string        CustomProgramArgs    { get; set; }
 		public ExecutionKind HandleForInvalidFile { get; set; }
 		public bool          IsDeleted            { get; set; }
+		public string		 IsDynamicIcon		  { get; set; }
 
 		public SettingProfile()
 		{
@@ -42,7 +43,7 @@ namespace AupLauncher
 			reg.SetValue(nameof(this.AudacityPath),         this.AudacityPath,         RegistryValueKind.String);
 			reg.SetValue(nameof(this.AudacityArgs),         this.AudacityArgs,         RegistryValueKind.String);
 			reg.SetValue(nameof(this.CustomProgramPath),    this.CustomProgramPath,    RegistryValueKind.String);
-			reg.SetValue(nameof(this.CustomProgramArgs),    this.CustomProgramArgs,    RegistryValueKind.String);
+			reg.SetValue(nameof(this.CustomProgramArgs),    this.CustomProgramArgs,    RegistryValueKind.String); 
 			reg.SetValue(nameof(this.HandleForInvalidFile), this.HandleForInvalidFile);
 		}
 
