@@ -35,6 +35,9 @@
   <PropertyGroup>
     <StartupObject>AupLauncherBootStrap.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AupFile.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -58,6 +61,9 @@
       <Project>{c174ef44-fedc-42ce-92f7-41d969651530}</Project>
       <Name>AupLauncher</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AupFile.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
