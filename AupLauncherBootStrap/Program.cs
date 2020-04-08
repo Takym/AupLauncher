@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
@@ -17,12 +17,12 @@ namespace AupLauncherBootStrap
 			var principal = new System.Security.Principal.WindowsPrincipal(identity);
 			return principal.IsInRole(System.Security.Principal.WindowsBuiltInRole.Administrator);
 		}
-		public const string Caption = nameof(AupLauncher);
-		public const string Description = "Launcher for AviUtl & Audacity Project Files";
-		public const string Author = "Takym and kokkiemouse";
-		public const string Copyright = "Copyright (C) 2020 Takym and kokkiemouse.";
-		public const string Version = "0.0.0.7";
-		public const string CodeName = "aupl00b7";
+		public const string Caption = AupLauncher.Program.Caption;
+		public const string Description = AupLauncher.Program.Description;
+		public const string Author = AupLauncher.Program.Author;
+		public const string Copyright = AupLauncher.Program.Copyright;
+		public const string Version = AupLauncher.Program.Version;
+		public const string CodeName = AupLauncher.Program.CodeName;
 
 		public static Settings Settings { get; private set; }
 
