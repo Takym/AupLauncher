@@ -8,7 +8,10 @@ using Microsoft.WindowsAPICodePack.ShellExtensions;
 
 namespace AupLauncher
 {
-
+    /// <summary>
+    /// シェルから呼ばれます。
+    /// ファイルのサムネイルに関するClassです。
+    /// </summary>
     [ComVisible(true)]
     [ClassInterface(ClassInterfaceType.None)]
     [ProgId("aupfile")]
@@ -16,12 +19,21 @@ namespace AupLauncher
     [ThumbnailProvider("AUPThumbnailer", ".aup", ThumbnailAdornment = ThumbnailAdornment.Default)]
     public class AupThumbnailProvider: ThumbnailProvider, IThumbnailFromStream, IThumbnailFromFile
     {
-
+        /// <summary>
+        /// AviutlのAUPファイルのヘッダです。
+        /// </summary>
         private static byte[] _aviutl_signature = new byte[] {
             0x41, 0x76, 0x69, 0x55, 0x74, 0x6C, 0x20, 0x50, 0x72, 0x6F, 0x6A, 0x65, 0x63, 0x74, 0x46, 0x69,
             0x6C, 0x65, 0x20, 0x76, 0x65, 0x72, 0x73, 0x69, 0x6F, 0x6E, 0x20, 0x30, 0x2E, 0x31, 0x38, 0x00
         };
         #region IThumbnailFromStream Members
+        /// <summary>
+        /// シェルから呼ばれます。
+        /// streamのサムネイルを取得して結果を返します。
+        /// </summary>
+        /// <param name="stream">対象ファイルのStreamです。</param>
+        /// <param name="sideSize">よく分かりません。</param>
+        /// <returns>サムネイルの内容です。</returns>
         public Bitmap ConstructBitmap(Stream stream, int sideSize)
         {
             using (var br = new BinaryReader(stream, Encoding.UTF8))
@@ -65,7 +77,13 @@ namespace AupLauncher
         #endregion
 
         #region IThumbnailFromFile Members
-
+        /// <summary>
+        /// ファイルが指定された場合です。
+        /// 上記のほうのWrapperです。
+        /// </summary>
+        /// <param name="info">対象ファイルの情報です。</param>
+        /// <param name="sideSize">よくわかりません。</param>
+        /// <returns>ファイルのサムネイル画像です。</returns>
         public Bitmap ConstructBitmap(FileInfo info, int sideSize)
         {
             using (FileStream stream = new FileStream(info.FullName, FileMode.Open, FileAccess.Read))

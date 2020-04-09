@@ -11,6 +11,10 @@ namespace AupLauncherBootStrap
 {
 	public static class Program
 	{
+		/// <summary>
+		/// 管理者権限か否か判定します。
+		/// </summary>
+		/// <returns>管理者権限の場合はTrue、そうでない場合はFalseが返されます。</returns>
 		private static bool IsAdministrator()
 		{
 			var identity = System.Security.Principal.WindowsIdentity.GetCurrent();
@@ -26,6 +30,11 @@ namespace AupLauncherBootStrap
 
 		public static Settings Settings { get; private set; }
 
+		/// <summary>
+		/// Main関数です。Exeから起動した際に使われます。
+		/// </summary>
+		/// <param name="args">コマンドライン引数です。</param>
+		/// <returns>結果です。</returns>
 		[STAThread()]
 		internal static int Main(string[] args)
 		{
