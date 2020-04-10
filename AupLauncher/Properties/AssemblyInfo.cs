@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyInformationalVersion(AupLauncher.Program.CodeName)]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: ComVisible(false)]
+[assembly: ComVisible(true)]
 [assembly: Guid("c174ef44-fedc-42ce-92f7-41d969651530")]
 
 #if REMOTE

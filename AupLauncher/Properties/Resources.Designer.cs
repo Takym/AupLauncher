@@ -63,9 +63,29 @@ namespace AupLauncher.Properties {
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Icon Audacity {
+            get {
+                object obj = ResourceManager.GetObject("Audacity", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Icon AupFile {
             get {
                 object obj = ResourceManager.GetObject("AupFile", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Icon Aviutl {
+            get {
+                object obj = ResourceManager.GetObject("Aviutl", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -287,6 +307,24 @@ namespace AupLauncher.Properties {
         }
         
         /// <summary>
+        ///   Message_COMInstalled に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Message_COMInstalled {
+            get {
+                return ResourceManager.GetString("Message_COMInstalled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Message_COMUnInstalled に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Message_COMUnInstalled {
+            get {
+                return ResourceManager.GetString("Message_COMUnInstalled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Message_ConfirmClosing に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Message_ConfirmClosing {
@@ -323,6 +361,15 @@ namespace AupLauncher.Properties {
         }
         
         /// <summary>
+        ///   Message_Installed に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Message_Installed {
+            get {
+                return ResourceManager.GetString("Message_Installed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Message_InvalidExecutionKind に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Message_InvalidExecutionKind {
@@ -337,6 +384,15 @@ namespace AupLauncher.Properties {
         internal static string Message_InvalidType {
             get {
                 return ResourceManager.GetString("Message_InvalidType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Message_UnInstalled に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Message_UnInstalled {
+            get {
+                return ResourceManager.GetString("Message_UnInstalled", resourceCulture);
             }
         }
         

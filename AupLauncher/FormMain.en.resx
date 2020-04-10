@@ -187,4 +187,10 @@
   <data name="btnSave.Text" xml:space="preserve">
     <value>Save</value>
   </data>
+  <data name="btnComInstall.Text" xml:space="preserve">
+    <value>Dynamic Icon Install</value>
+  </data>
+  <data name="btnComUnInstall.Text" xml:space="preserve">
+    <value>Dynamic Icon Uninstall</value>
+  </data>
 </root>

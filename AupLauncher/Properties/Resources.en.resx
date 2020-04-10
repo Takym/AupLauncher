@@ -193,6 +193,12 @@
   <data name="ER_Line8_Title" xml:space="preserve">
     <value>## Exception Information ({0})</value>
   </data>
+  <data name="Message_COMInstalled" xml:space="preserve">
+    <value>Registry Successful</value>
+  </data>
+  <data name="Message_COMUnInstalled" xml:space="preserve">
+    <value>Unregistry Successful</value>
+  </data>
   <data name="Message_ConfirmClosing" xml:space="preserve">
     <value>Settings are changed. Do you want to save?
 If you click [Yes] button, save changes and close.
@@ -208,11 +214,17 @@ If you click [Cancel] button, will not close the form.</value>
   <data name="Message_FileNotFound" xml:space="preserve">
     <value>The specified file "{0}" does not exist.</value>
   </data>
+  <data name="Message_Installed" xml:space="preserve">
+    <value>Install Successful</value>
+  </data>
   <data name="Message_InvalidExecutionKind" xml:space="preserve">
     <value>Detected an invalid execution method. Please fix the settings.</value>
   </data>
   <data name="Message_InvalidType" xml:space="preserve">
     <value>The specified file "{0}" is not a valid project file.</value>
+  </data>
+  <data name="Message_UnInstalled" xml:space="preserve">
+    <value>UnInstall Successful</value>
   </data>
   <data name="NewProfileDisplayName" xml:space="preserve">
     <value>New Profile</value>
