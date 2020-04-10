@@ -121,6 +121,12 @@
   <data name="AupFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>AupFile.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Aviutl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>aviutl.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Audacity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>audacity.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="DefaultProfileDisplayName" xml:space="preserve">
     <value>DefaultProfileDisplayName</value>
   </data>
@@ -252,5 +258,17 @@
   </data>
   <data name="V_Line8" xml:space="preserve">
     <value>V_Line8 {0}</value>
+  </data>
+  <data name="Message_COMInstalled" xml:space="preserve">
+    <value>Message_COMInstalled</value>
+  </data>
+  <data name="Message_COMUnInstalled" xml:space="preserve">
+    <value>Message_COMUnInstalled</value>
+  </data>
+  <data name="Message_Installed" xml:space="preserve">
+    <value>Message_Installed</value>
+  </data>
+  <data name="Message_UnInstalled" xml:space="preserve">
+    <value>Message_UnInstalled</value>
   </data>
 </root>

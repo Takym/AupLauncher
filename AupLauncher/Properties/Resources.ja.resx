@@ -193,6 +193,12 @@
   <data name="ER_Line8_Title" xml:space="preserve">
     <value>□例外の情報 ({0})</value>
   </data>
+  <data name="Message_COMInstalled" xml:space="preserve">
+    <value>登録が完了しました。</value>
+  </data>
+  <data name="Message_COMUnInstalled" xml:space="preserve">
+    <value>登録解除が完了しました。</value>
+  </data>
   <data name="Message_ConfirmClosing" xml:space="preserve">
     <value>設定が変更されています。保存しますか？
 [はい]を押すと変更を保存し終了します。
@@ -208,11 +214,17 @@
   <data name="Message_FileNotFound" xml:space="preserve">
     <value>指定されたファイル「{0}」は存在しません。</value>
   </data>
+  <data name="Message_Installed" xml:space="preserve">
+    <value>インストールが完了しました。</value>
+  </data>
   <data name="Message_InvalidExecutionKind" xml:space="preserve">
     <value>無効な起動方法が検出されました。設定を変更してください。</value>
   </data>
   <data name="Message_InvalidType" xml:space="preserve">
     <value>指定されたファイル「{0}」は有効なプロジェクトファイルではありません。</value>
+  </data>
+  <data name="Message_UnInstalled" xml:space="preserve">
+    <value>アンインストールが完了しました</value>
   </data>
   <data name="NewProfileDisplayName" xml:space="preserve">
     <value>新しいプロファイル</value>

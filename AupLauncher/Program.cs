@@ -13,9 +13,10 @@ namespace AupLauncher
 		public const string Caption        = nameof(AupLauncher);
 		public const string Description    = "Launcher for AviUtl & Audacity Project Files";
 		public const string Author         = "Takym";
+		public const string Authors        = "Takym, kokkiemouse";
 		public const string Copyright      = "Copyright (C) 2020 Takym.";
 		public const string Version        = "0.0.0.6";
-		public const string CodeName       = "aupl00a6";
+		public const string CodeName       = "Derived From aupl00a6";
 
 		public static Settings Settings { get; private set; }
 
@@ -27,15 +28,151 @@ namespace AupLauncher
 #else
 			{
 #endif
-				using (Settings = new Settings()) {
-					if (args.Length == 1 && Settings.IsInstalled) {
-						return StartupProgram(DetermineFileKind(args[0]));
-					} else {
-						Application.EnableVisualStyles();
-						Application.SetCompatibleTextRenderingDefault(false);
-						Application.Run(new FormMain());
-						return 0;
+
+				if (args.Length == 1)
+				{
+					if (args[0] == "/icom")
+					{
+						if (IsAdministrator())
+						{
+
+							//Processオブジェクトを作成する
+							System.Diagnostics.Process p = new System.Diagnostics.Process();
+							//起動する実行ファイルのパスを設定する
+							p.StartInfo.FileName = "rundll32.exe";
+							System.Management.ManagementObject mo =
+																new System.Management.ManagementObject("Win32_Processor.DeviceID='CPU0'");
+							ushort addWidth = (ushort)mo["AddressWidth"];
+							if (addWidth == 32)
+							{
+								p.StartInfo.Arguments = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\COM_reg_x86.dll Register \"" + Application.ExecutablePath + "\"";
+							}
+							else if (addWidth == 64)
+							{
+								p.StartInfo.Arguments = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\COM_reg_x64.dll Register \"" + Application.ExecutablePath + "\"";
+
+							}
+							mo.Dispose();
+
+							//起動する。プロセスが起動した時はTrueを返す。
+							bool result = p.Start();
+							return 0;
+						}
+						else
+						{
+							RunElevated(System.Reflection.Assembly.GetEntryAssembly().Location, "/icom", null, false);
+							return 0;
+						}
 					}
+
+					if (args[0] == "/uncom")
+					{
+						if (IsAdministrator())
+						{
+							//Processオブジェクトを作成する
+							System.Diagnostics.Process p = new System.Diagnostics.Process();
+							//起動する実行ファイルのパスを設定する
+							p.StartInfo.FileName = "rundll32.exe";
+							System.Management.ManagementObject mo =
+																new System.Management.ManagementObject("Win32_Processor.DeviceID='CPU0'");
+							ushort addWidth = (ushort)mo["AddressWidth"];
+							if (addWidth == 32)
+							{
+								p.StartInfo.Arguments = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\COM_reg_x86.dll UnRegister \"" + Application.ExecutablePath + "\"";
+							}
+							else if (addWidth == 64)
+							{
+								p.StartInfo.Arguments = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\COM_reg_x64.dll UnRegister \"" + Application.ExecutablePath + "\"";
+
+							}
+							mo.Dispose();
+
+							//起動する。プロセスが起動した時はTrueを返す。
+							bool result = p.Start();
+							return 0;
+						}
+						else
+						{
+							RunElevated(System.Reflection.Assembly.GetEntryAssembly().Location, "/uncom", null, false);
+							return 0;
+						}
+					}
+				}
+				using (Settings = new Settings())
+				{
+					if (args.Length == 1)
+					{
+						if (args[0] == "/i")
+						{
+							if (IsAdministrator())
+							{
+								Application.EnableVisualStyles();
+								Application.SetCompatibleTextRenderingDefault(false);
+								Application.Run(new FormMain());
+								return 0;
+							}
+							else
+							{
+								RunElevated(System.Reflection.Assembly.GetEntryAssembly().Location, "/i", null, true);
+								return 0;
+							}
+						}
+						if (args[0] == "/rr")
+						{
+							if (IsAdministrator())
+							{
+								//Processオブジェクトを作成する
+								System.Diagnostics.Process p = new System.Diagnostics.Process();
+								//起動する実行ファイルのパスを設定する
+								p.StartInfo.FileName = "rundll32.exe";
+								System.Management.ManagementObject mo =
+																	new System.Management.ManagementObject("Win32_Processor.DeviceID='CPU0'");
+								ushort addWidth = (ushort)mo["AddressWidth"];
+								if (addWidth == 32)
+								{
+									p.StartInfo.Arguments = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\COM_reg_x86.dll UnRegister_UN \"" + Application.ExecutablePath + "\"";
+								}
+								else if (addWidth == 64)
+								{
+									p.StartInfo.Arguments = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\COM_reg_x64.dll UnRegister_UN \"" + Application.ExecutablePath + "\"";
+
+								}
+								mo.Dispose();
+
+								//起動する。プロセスが起動した時はTrueを返す。
+								bool result = p.Start();
+								return 0;
+							}
+							else
+							{
+								RunElevated(System.Reflection.Assembly.GetEntryAssembly().Location, "/rr", null, false);
+								return 0;
+							}
+						}
+						if (args[0] == "/r")
+						{
+							if (IsAdministrator())
+							{
+								Settings.Uninstall();
+								return 0;
+							}
+							else
+							{
+								RunElevated(System.Reflection.Assembly.GetEntryAssembly().Location, "/r", null, false);
+								return 0;
+							}
+						}
+						if (Settings.IsInstalled)
+						{
+							return StartupProgram(DetermineFileKind(args[0]));
+						}
+
+					}
+					Application.EnableVisualStyles();
+					Application.SetCompatibleTextRenderingDefault(false);
+					Application.Run(new FormMain());
+					return 0;
+
 				}
 #if !DEBUG
 			} catch (Exception e) {
@@ -207,5 +344,69 @@ audacity:
 			0x41, 0x76, 0x69, 0x55, 0x74, 0x6C, 0x20, 0x50, 0x72, 0x6F, 0x6A, 0x65, 0x63, 0x74, 0x46, 0x69,
 			0x6C, 0x65, 0x20, 0x76, 0x65, 0x72, 0x73, 0x69, 0x6F, 0x6E, 0x20, 0x30, 0x2E, 0x31, 0x38, 0x00
 		};
+		/// <summary>
+		/// 権限を昇格してプロセスを実行します。
+		/// </summary>
+		/// <param name="fileName">実行するファイル名</param>
+		/// <param name="arguments">コマンドライン引数</param>
+		/// <param name="parentForm">UAC表示用の親ウィンドウ</param>
+		/// <param name="waitExit">trueで終了まで待機、falseで待機しない。</param>
+		/// <returns>正常に実行できればtrue、実行できなければfalse</returns>
+		public static bool RunElevated(string fileName, string arguments,
+	Form parentForm, bool waitExit)
+		{
+			//プログラムがあるか調べる
+			if (!System.IO.File.Exists(fileName))
+			{
+				throw new System.IO.FileNotFoundException();
+			}
+
+			System.Diagnostics.ProcessStartInfo psi =
+				new System.Diagnostics.ProcessStartInfo();
+			//ShellExecuteを使う。デフォルトtrueなので、必要はない。
+			psi.UseShellExecute = true;
+			//昇格して実行するプログラムのパスを設定する
+			psi.FileName = fileName;
+			//動詞に「runas」をつける
+			psi.Verb = "runas";
+			//子プログラムに渡すコマンドライン引数を設定する
+			psi.Arguments = arguments;
+
+			if (parentForm != null)
+			{
+				//UACダイアログが親プログラムに対して表示されるようにする
+				psi.ErrorDialog = true;
+				psi.ErrorDialogParentHandle = parentForm.Handle;
+			}
+
+			try
+			{
+				//起動する
+				System.Diagnostics.Process p = System.Diagnostics.Process.Start(psi);
+				if (waitExit)
+				{
+					//終了するまで待機する
+					p.WaitForExit();
+				}
+			}
+			catch (System.ComponentModel.Win32Exception)
+			{
+				//「ユーザーアカウント制御」ダイアログでキャンセルされたなどによって
+				//起動できなかった時
+				return false;
+			}
+
+			return true;
+		}
+		/// <summary>
+		/// 管理者権限か否か判定します。
+		/// </summary>
+		/// <returns>管理者権限の場合はTrue、そうでない場合はFalseが返されます。</returns>
+		private static bool IsAdministrator()
+		{
+			var identity = System.Security.Principal.WindowsIdentity.GetCurrent();
+			var principal = new System.Security.Principal.WindowsPrincipal(identity);
+			return principal.IsInRole(System.Security.Principal.WindowsBuiltInRole.Administrator);
+		}
 	}
 }

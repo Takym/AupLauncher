@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using AupLauncher.Properties;
 
@@ -18,7 +19,16 @@ namespace AupLauncher
 		private void FormMain_Load(object sender, EventArgs e)
 		{
 			if (!Program.Settings.IsInstalled) {
-				Program.Settings.Install();
+				if (IsAdministrator())
+				{
+					Program.Settings.Install();
+					MessageBox.Show(null, Resources.Message_Installed, nameof(AupLauncher).ToString(), MessageBoxButtons.OK, MessageBoxIcon.Information);
+				}
+				else
+				{
+					RunElevated(System.Reflection.Assembly.GetEntryAssembly().Location, "/i", null, false);
+					Application.Exit();
+				}
 			}
 			cbox_invfile.Items.Add(ExecutionKind.ShowError       .Localized());
 			cbox_invfile.Items.Add(ExecutionKind.Nothing         .Localized());
@@ -27,6 +37,12 @@ namespace AupLauncher
 			cbox_invfile.Items.Add(ExecutionKind.RunCustomProgram.Localized());
 			cbox_invfile.Items.Add(ExecutionKind.ShowSettings    .Localized());
 			this.btnReload_Click(sender, e);
+			if (!IsAdministrator())
+			{
+				SetShieldIcon(this.btnComInstall);
+				SetShieldIcon(this.btnComUnInstall);
+				SetShieldIcon(this.btnUninstall);
+			}
 		}
 
 		private void FormMain_HelpButtonClicked(object sender, CancelEventArgs e)
@@ -145,8 +161,9 @@ namespace AupLauncher
 				Program.Caption,
 				MessageBoxButtons.YesNo,
 				MessageBoxIcon.Question);
-			if (dr == DialogResult.Yes) {
-				Program.Settings.Uninstall();
+			if (dr == DialogResult.Yes)
+			{
+				RunElevated(System.Reflection.Assembly.GetEntryAssembly().Location, "/rr", this, false);
 				this.Close();
 			}
 		}
@@ -190,6 +207,124 @@ namespace AupLauncher
 				tbox_cus_args  .Enabled = false;
 				btn_cus_path   .Enabled = false;
 			}
+		}
+		[DllImport("user32.dll")]
+		private static extern IntPtr SendMessage(HandleRef hWnd,
+	uint Msg, IntPtr wParam, IntPtr lParam);
+		private const int BCM_FIRST = 0x1600;
+		private const int BCM_SETSHIELD = BCM_FIRST + 0x000C;
+
+		/// <summary>
+		/// UACの盾アイコンをボタンコントロールに表示（あるいは、非表示）する
+		/// </summary>
+		/// <param name="targetButton">盾アイコンを表示するボタンコントロール</param>
+		/// <param name="showShield">盾アイコンを表示する時はtrue。
+		/// 非表示にする時はfalse1。</param>
+		public static void SetShieldIcon(Button targetButton, bool showShield)
+		{
+			if (targetButton == null)
+			{
+				throw new ArgumentNullException("targetButton");
+			}
+
+			//Windows Vista以上か確認する
+			if (Environment.OSVersion.Platform != PlatformID.Win32NT ||
+				Environment.OSVersion.Version.Major < 6)
+			{
+				return;
+			}
+
+			//FlatStyleをSystemにする
+			targetButton.FlatStyle = FlatStyle.System;
+
+			//盾アイコンを表示（または非表示）にする
+			SendMessage(new HandleRef(targetButton, targetButton.Handle),
+				BCM_SETSHIELD,
+				IntPtr.Zero,
+				showShield ? new IntPtr(1) : IntPtr.Zero);
+		}
+
+		/// <summary>
+		/// UACの盾アイコンをボタンコントロールに表示する
+		/// </summary>
+		/// <param name="targetButton">盾アイコンを表示するボタンコントロール</param>
+		public static void SetShieldIcon(Button targetButton)
+		{
+			SetShieldIcon(targetButton, true);
+		}
+		private bool IsAdministrator()
+		{
+			var identity = System.Security.Principal.WindowsIdentity.GetCurrent();
+			var principal = new System.Security.Principal.WindowsPrincipal(identity);
+			return principal.IsInRole(System.Security.Principal.WindowsBuiltInRole.Administrator);
+		}
+		private void btnComInstall_Click(object sender, EventArgs e)
+		{
+				RunElevated(System.Reflection.Assembly.GetEntryAssembly().Location, "/icom", this, false);
+			Application.Exit();
+			//MessageBox.Show(this, Resources.Message_COMInstalled, nameof(AupLauncher).ToString(), MessageBoxButtons.OK, MessageBoxIcon.Information);
+		}
+		/// <summary>
+		/// 管理者権限が必要なプログラムを起動する
+		/// </summary>
+		/// <param name="fileName">プログラムのフルパス。</param>
+		/// <param name="arguments">プログラムに渡すコマンドライン引数。</param>
+		/// <param name="parentForm">親プログラムのウィンドウ。</param>
+		/// <param name="waitExit">起動したプログラムが終了するまで待機する。</param>
+		/// <returns>起動に成功した時はtrue。
+		/// 「ユーザーアカウント制御」ダイアログでキャンセルされた時はfalse。</returns>
+		public static bool RunElevated(string fileName, string arguments,
+			Form parentForm, bool waitExit)
+		{
+			//プログラムがあるか調べる
+			if (!System.IO.File.Exists(fileName))
+			{
+				throw new System.IO.FileNotFoundException();
+			}
+
+			System.Diagnostics.ProcessStartInfo psi =
+				new System.Diagnostics.ProcessStartInfo();
+			//ShellExecuteを使う。デフォルトtrueなので、必要はない。
+			psi.UseShellExecute = true;
+			//昇格して実行するプログラムのパスを設定する
+			psi.FileName = fileName;
+			//動詞に「runas」をつける
+			psi.Verb = "runas";
+			//子プログラムに渡すコマンドライン引数を設定する
+			psi.Arguments = arguments;
+
+			if (parentForm != null)
+			{
+				//UACダイアログが親プログラムに対して表示されるようにする
+				psi.ErrorDialog = true;
+				psi.ErrorDialogParentHandle = parentForm.Handle;
+			}
+
+			try
+			{
+				//起動する
+				System.Diagnostics.Process p = System.Diagnostics.Process.Start(psi);
+				if (waitExit)
+				{
+					//終了するまで待機する
+					p.WaitForExit();
+				}
+			}
+			catch (System.ComponentModel.Win32Exception)
+			{
+				//「ユーザーアカウント制御」ダイアログでキャンセルされたなどによって
+				//起動できなかった時
+				return false;
+			}
+
+			return true;
+		}
+
+		private void btnComUnInstall_Click(object sender, EventArgs e)
+		{
+			RunElevated(System.Reflection.Assembly.GetEntryAssembly().Location, "/uncom", this, true);
+			MessageBox.Show(this, Resources.Message_COMUnInstalled, nameof(AupLauncher).ToString(), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
 		}
 	}
 }
