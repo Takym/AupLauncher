@@ -307,6 +307,7 @@ namespace AupLauncher.Properties {
         }
         
         /// <summary>
+<<<<<<< HEAD
         ///   Message_COMInstalled に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Message_COMInstalled {
@@ -321,6 +322,13 @@ namespace AupLauncher.Properties {
         internal static string Message_COMUnInstalled {
             get {
                 return ResourceManager.GetString("Message_COMUnInstalled", resourceCulture);
+=======
+        ///   Message_AnotherVersionInstalled に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Message_AnotherVersionInstalled {
+            get {
+                return ResourceManager.GetString("Message_AnotherVersionInstalled", resourceCulture);
+>>>>>>> 96aedbbc523088ed8decbae426d332bd35c7ae67
             }
         }
         

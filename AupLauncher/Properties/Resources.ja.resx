@@ -193,11 +193,16 @@
   <data name="ER_Line8_Title" xml:space="preserve">
     <value>□例外の情報 ({0})</value>
   </data>
+<<<<<<< HEAD
   <data name="Message_COMInstalled" xml:space="preserve">
     <value>登録が完了しました。</value>
   </data>
   <data name="Message_COMUnInstalled" xml:space="preserve">
     <value>登録解除が完了しました。</value>
+=======
+  <data name="Message_AnotherVersionInstalled" xml:space="preserve">
+    <value>既に別のバージョンがインストールされているため、起動できません。</value>
+>>>>>>> 96aedbbc523088ed8decbae426d332bd35c7ae67
   </data>
   <data name="Message_ConfirmClosing" xml:space="preserve">
     <value>設定が変更されています。保存しますか？

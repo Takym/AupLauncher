@@ -15,8 +15,13 @@ namespace AupLauncher
 		public const string Author         = "Takym";
 		public const string Authors        = "Takym, kokkiemouse";
 		public const string Copyright      = "Copyright (C) 2020 Takym.";
+<<<<<<< HEAD
 		public const string Version        = "0.0.0.6";
 		public const string CodeName       = "Derived From aupl00a6";
+=======
+		public const string Version        = "0.0.0.7";
+		public const string CodeName       = "aupl00a7";
+>>>>>>> 96aedbbc523088ed8decbae426d332bd35c7ae67
 
 		public static Settings Settings { get; private set; }
 
@@ -175,8 +180,15 @@ namespace AupLauncher
 
 				}
 #if !DEBUG
+			} catch (NotSupportedException nse) {
+				MessageBox.Show(
+					Resources.Message_AnotherVersionInstalled,
+					Caption,
+					MessageBoxButtons.OK,
+					MessageBoxIcon.Error);
+				return SaveErrorReport(nse, true);
 			} catch (Exception e) {
-				return SaveErrorReport(e);
+				return SaveErrorReport(e, true);
 #endif
 			}
 		}
@@ -293,7 +305,7 @@ audacity:
 			}
 		}
 
-		public static int SaveErrorReport(Exception e)
+		public static int SaveErrorReport(Exception e, bool showMsg)
 		{
 			var    dt    = DateTime.Now;
 			int    pid   = Process.GetCurrentProcess().Id;
@@ -332,11 +344,13 @@ audacity:
 					e = e.InnerException; ++n;
 				} while (e != null);
 			}
-			MessageBox.Show(
-				string.Format(Resources.Message_ErrorReport, msg, fname),
-				Caption,
-				MessageBoxButtons.OK,
-				MessageBoxIcon.Error);
+			if (showMsg) {
+				MessageBox.Show(
+					string.Format(Resources.Message_ErrorReport, msg, fname),
+					Caption,
+					MessageBoxButtons.OK,
+					MessageBoxIcon.Error);
+			}
 			return ret;
 		}
 

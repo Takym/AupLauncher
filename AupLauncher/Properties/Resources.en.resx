@@ -193,11 +193,16 @@
   <data name="ER_Line8_Title" xml:space="preserve">
     <value>## Exception Information ({0})</value>
   </data>
+<<<<<<< HEAD
   <data name="Message_COMInstalled" xml:space="preserve">
     <value>Registry Successful</value>
   </data>
   <data name="Message_COMUnInstalled" xml:space="preserve">
     <value>Unregistry Successful</value>
+=======
+  <data name="Message_AnotherVersionInstalled" xml:space="preserve">
+    <value>The another version of this program is already installed on your computer.</value>
+>>>>>>> 96aedbbc523088ed8decbae426d332bd35c7ae67
   </data>
   <data name="Message_ConfirmClosing" xml:space="preserve">
     <value>Settings are changed. Do you want to save?
