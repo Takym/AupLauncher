@@ -287,6 +287,15 @@ namespace AupLauncher.Properties {
         }
         
         /// <summary>
+        ///   Message_AnotherVersionInstalled に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Message_AnotherVersionInstalled {
+            get {
+                return ResourceManager.GetString("Message_AnotherVersionInstalled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Message_ConfirmClosing に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Message_ConfirmClosing {

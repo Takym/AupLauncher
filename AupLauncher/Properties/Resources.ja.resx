@@ -193,6 +193,9 @@
   <data name="ER_Line8_Title" xml:space="preserve">
     <value>□例外の情報 ({0})</value>
   </data>
+  <data name="Message_AnotherVersionInstalled" xml:space="preserve">
+    <value>既に別のバージョンがインストールされているため、起動できません。</value>
+  </data>
   <data name="Message_ConfirmClosing" xml:space="preserve">
     <value>設定が変更されています。保存しますか？
 [はい]を押すと変更を保存し終了します。

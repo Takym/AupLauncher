@@ -84,6 +84,7 @@ namespace AupLauncher
 			if (this.IsDisposed) {
 				throw new ObjectDisposedException(nameof(Settings));
 			}
+			this.Default.DisplayName = Resources.DefaultProfileDisplayName; // TODO: 不具合の応急措置
 			_reg.SetValue("SavedVersion",   Program.Version, RegistryValueKind.String);
 			_reg.SetValue("DefaultProfile", _defkey,         RegistryValueKind.String);
 			var delList = new List<string>();

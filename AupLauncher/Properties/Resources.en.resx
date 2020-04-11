@@ -193,6 +193,9 @@
   <data name="ER_Line8_Title" xml:space="preserve">
     <value>## Exception Information ({0})</value>
   </data>
+  <data name="Message_AnotherVersionInstalled" xml:space="preserve">
+    <value>The another version of this program is already installed on your computer.</value>
+  </data>
   <data name="Message_ConfirmClosing" xml:space="preserve">
     <value>Settings are changed. Do you want to save?
 If you click [Yes] button, save changes and close.
