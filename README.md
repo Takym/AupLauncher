@@ -1,56 +1,56 @@
 # AupLauncher
-Copyright (C) 2020 Takym.
-Copyright (C) 2020 kokkiemouse. (��)
+Copyright (C) 2020 Takym. <br />
+Copyright (C) 2020 kokkiemouse. (仮)
 
-[���{��](https://github.com/Takym/AupLauncher#ja)
+[日本語](https://github.com/Takym/AupLauncher#ja)
 [English](https://github.com/Takym/AupLauncher#en)
 
-## �T�v
-AviUtl �� Audacity �̃v���W�F�N�g�t�@�C����F�����K�؂ȃA�v���P�[�V�������N�����܂��B
-Windows 10 (2004) �œ���m�F���Ă��܂��B
+## 概要
+AviUtl と Audacity のプロジェクトファイルを認識し適切なアプリケーションを起動します。
+Windows 10 (2004) で動作確認しています。
 
-## ����
-���̃A�v���P�[�V�����̓��W�X�g����ύX���܂��B
-���s�O�Ƀo�b�N�A�b�v����鎖���������߂��܂��B
+## 注意
+このアプリケーションはレジストリを変更します。
+実行前にバックアップを取る事をおすすめします。
 
-## ���p�K��
-���̃\�t�g�E�F�A��MIT���C�Z���X�̉��Ŕz�z����܂��B
-�ڂ�����[LICENSE.txt](LICENSE.txt)���������������B
+## 利用規約
+このソフトウェアはMITライセンスの下で配布されます。
+詳しくは[LICENSE.txt](LICENSE.txt)をご覧ください。
 
-## �C���X�g�[�����@
-0. AviUtl �� Audacity ���C���X�g�[������Ă��鎖��O��ɓ��삵�܂��B�܂��ŏ��ɃC���X�g�[�����Ă����Ă��������B
+## インストール方法
+0. AviUtl と Audacity がインストールされている事を前提に動作します。まず最初にインストールしておいてください。
 	* [AviUtl](http://spring-fragrance.mints.ne.jp/aviutl/)
 	* [Audacity](https://www.audacityteam.org/)
-1. �K���ȏꏊ�ɉ��L�̃t�H���_�ƃt�@�C�����R�s�[���܂��B
+1. 適当な場所に下記のフォルダとファイルをコピーします。
 	* en
 		* AupLauncher.resources.dll
 	* ja
 		* AupLauncher.resources.dll
 	* AupLauncher.exe
 	* AupLauncher.exe.config
-2. AupLauncher.exe ���E�N���b�N���Ǘ��҂Ƃ��Ď��s���܂��B����ƁA�g���q��񂪎����I�Ɋ֘A�t�����܂��B
-3. �ݒ荀�ڂ����ɍ��킹�ďC�����܂��B
-4. �ύX��ۑ����܂��B
-5. �C���X�g�[�������ł��B
+2. AupLauncher.exe を右クリックし管理者として実行します。すると、拡張子情報が自動的に関連付けられます。
+3. 設定項目を環境に合わせて修正します。
+4. 変更を保存します。
+5. インストール完了です。
 
-## �A���C���X�g�[�����@
-1. �ݒ��ʂ��J���܂��B
-2. [�A���C���X�g�[��] �{�^���������܂��B
-3. ���b�Z�[�W���\�����ꂽ�� [�͂�] ��I�����܂��B
-4. �֘A�t�H���_�ƃt�@�C�����蓮�ō폜���܂��B
+## アンインストール方法
+1. 設定画面を開きます。
+2. [アンインストール] ボタンを押します。
+3. メッセージが表示されたら [はい] を選択します。
+4. 関連フォルダとファイルを手動で削除します。
 
-## �g����
-* ��L�̎w���ɏ]���Đ������C���X�g�[�������ꍇ�A�u.aup�v�t�@�C�����J���Ǝ����I�� AviUtl �܂��� Audacity ���N�����܂��B
-* �܂��A�t�@�C�����̐擪�Ɂuaupfile:�v�ƕt���ău���E�U�E�G�N�X�v���[�����̃A�h���X�o�[�ɓ��͂��鎖�ł��N���ł��܂��B
-* AupLauncher.exe �ɉ���������^�����ɋN�������ꍇ�A�ݒ��ʂ��J����܂��B
-* �ݒ��ʂ̉E���[?]�{�^���������ƃo�[�W������񂪕\������܂��B
+## 使い方
+* 上記の指示に従って正しくインストールした場合、「.aup」ファイルを開くと自動的に AviUtl または Audacity が起動します。
+* また、ファイル名の先頭に「aupfile:」と付けてブラウザ・エクスプローラ等のアドレスバーに入力する事でも起動できます。
+* AupLauncher.exe に何も引数を与えずに起動した場合、設定画面が開かれます。
+* 設定画面の右上の[?]ボタンを押すとバージョン情報が表示されます。
 
-## �g�p���Ă��郉�C�u�����ɂ���
-���ƃr���h��Windows API Codec Pack���g�p���Ă��܂��B
+## 使用しているライブラリについて
+自家ビルドなWindows API Codec Packを使用しています。
 
-## �o�[�W��������
-|�o�[�W����|�J���R�[�h��|�X�V��    |���e                                                                                                                           |
+## バージョン履歴
+|バージョン|開発コード名|更新日    |内容                                                                                                                           |
 |:--------:|:----------:|:---------|:------------------------------------------------------------------------------------------------------------------------------|
-|v0.0.0.6  |Derived From aupl00a6 base exe|2020/04/10|EXE�t�@�C�������C���ɂ��ADLL��COM�o�^�������Ăяo�����悤�ɂ���(EXE�������Ɛ���ɓo�^���ł��Ȃ��̂ŁARUNDLL32�ŕʃv���Z�X�������B) |
-|v0.0.0.6  |Derived From aupl00a6         |2020/04/06|���I�A�C�R���̃C���X�g�[���A�A���C���X�g�[�����ʂɂł���悤�ɂ����B����ɁA����̑��삾���Ǘ��Ҍ�����v������悤���P�����B |
-|v0.0.0.5  |Derived From aupl00a5         |2020/04/04|�T���l�ŋ�ʂł���@�\��ǉ��B                                                                 
+|v0.0.0.6  |Derived From aupl00a6 "kokkiemouse, 2"|2020/04/10|EXEファイルをメインにし、DLLはCOM登録時だけ呼び出されるようにした(EXEだけだと正常に登録ができないので、RUNDLL32で別プロセス化した。) |
+|v0.0.0.6  |Derived From aupl00a6 "kokkiemouse, 1"|2020/04/06|動的アイコンのインストール、アンインストールを個別にできるようにした。さらに、特定の操作だけ管理者権限を要求するよう改善した。 |
+|v0.0.0.5  |Derived From aupl00a5 "kokkiemouse"|2020/04/04|サムネで区別できる機能を追加。                                                                 
